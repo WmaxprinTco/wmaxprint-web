@@ -109,33 +109,50 @@ body{
 
 /*----------TEXTILES / WTEXPRINT----------*/
 
-.menu-textiles {
+.menu-textiles{
+
     display: flex;
     align-items: center;
     gap: 10px;
+
 }
 
-.menu-textiles span {
+.menu-textiles span{
+
     color: #0b2239;
     font-size: 18px;
     font-weight: bold;
+
 }
 
-.btn-wtexprint {
-    background-color: #0b2239;
+/*----------BOTÓN WTEXPRINT----------*/
+
+.btn-wtexprint{
+
+    display: inline-block;
+
+    background: #D62828;
     color: white !important;
-    padding: 5px 16px;
-    border-radius: 5px;
+
+    padding: 6px 17px;
+
+    border-radius: 6px;
+
     font-size: 18px;
     font-weight: bold;
+
     text-decoration: none;
-    display: inline-block;
-    line-height: normal;
+
+    line-height: 1;
+
+    transition: .3s;
+
 }
 
-.btn-wtexprint:hover {
-    background-color: #0b2239;
-    color: white !important;
+.btn-wtexprint:hover{
+
+    background: #B51F1F;
+
 }
 
 /*----------MENU ACTIVO----------*/
