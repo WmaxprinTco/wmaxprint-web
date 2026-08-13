@@ -107,6 +107,50 @@ body{
     margin:auto;
 }
 
+/*----------TEXTILES / WTEXPRINT----------*/
+
+.menu-textiles{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.menu-textiles span{
+
+    color: #0B3D91;
+    font-weight: bold;
+
+}
+
+.btn-wtexprint{
+
+    display: inline-block;
+
+    background: #D62828;
+    color: white !important;
+
+    padding: 8px 15px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.btn-wtexprint:hover{
+
+    background: #B51F1F;
+
+    transform: translateY(-2px);
+
+}
+
 /*----------MENU ACTIVO----------*/
 
 .menu a.active{
