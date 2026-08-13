@@ -112,37 +112,30 @@ body{
 .menu-textiles {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .menu-textiles span {
+    color: #0b2239;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .btn-wtexprint {
-    background-color: #d62828;
+    background-color: #0b2239;
     color: white !important;
-    padding: 8px 12px;
+    padding: 5px 16px;
     border-radius: 5px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
+    display: inline-block;
+    line-height: normal;
 }
 
 .btn-wtexprint:hover {
-    background-color: #b71c1c;
+    background-color: #0b2239;
     color: white !important;
-}
-
-.btn-wtexprint:hover{
-
-    background: #B51F1F;
-
-    transform: translateY(-2px);
-
 }
 
 /*----------MENU ACTIVO----------*/
