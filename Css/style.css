@@ -277,52 +277,56 @@ body{
     transform:scale(1.05);
 }
 
-/*----------BARRA LATERAL----------*/
+/*---------- BARRA LATERAL ----------*/
 
-.menu-servicios{
-
+.menu-servicios {
     background: white;
     width: 320px;
-    align-self: start;
-    border-radius: 15px;
+    
+    /* POSICIÓN FLOTANTE A LA DERECHA */
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border-radius: 15px 0 0 15px;
     padding: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0, .18); 
-    margin-top: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.18);
+
+    z-index: 9999;
+    box-sizing: border-box;
 }
 
-.menu-servicios h3{
-
+.menu-servicios h3 {
     text-align: center;
-    color:#0B3D91;
+    color: #0B3D91;
     margin-bottom: 25px;
     font-size: 28px;
 }
 
-.menu-servicios ul{
-
+.menu-servicios ul {
     list-style: none;
 }
 
-.menu-servicios li{
-
+.menu-servicios li {
     margin: 15px 0;
 }
 
-.menu-servicios a{
-
+.menu-servicios a {
     display: block;
     text-decoration: none;
-    color:#333;
+    color: #333;
     padding: 12px 15px;
     border-radius: 8px;
     transition: .3s;
     font-weight: bold;
 }
-.menu-servicios a:hover{
 
-    background:#D62828;
-    color:white;
-    padding-left:22px;
+.menu-servicios a:hover {
+    background: #D62828;
+    color: white;
+    padding-left: 22px;
+
 }
 
 /*----------NUESTROS SERVICIOS----------*/
@@ -1400,45 +1404,42 @@ width:150px;
 
 }
 
-/*---------- MENU FLOTANTE DE SERVICIOS ----------*/
+/*---------- MENU FLOTANTE DERECHA ----------*/
 
-.menu-servicios {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+aside.menu-servicios {
+    position: fixed !important;
+    top: 50% !important;
+    right: 0 !important;
+    left: auto !important;
+
+    transform: translateY(-50%) !important;
 
     width: 220px;
     padding: 20px;
 
     background: #ffffff;
     border-radius: 15px 0 0 15px;
+
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
 
-    z-index: 1000;
+    z-index: 9999;
+    box-sizing: border-box;
 }
 
-.menu-servicios h3 {
-    color: #0B3D91;
-    font-size: 20px;
+aside.menu-servicios h3 {
     margin: 0 0 15px;
     text-align: center;
+    color: #0B3D91;
 }
 
-.menu-servicios a {
+aside.menu-servicios a {
     display: block;
     padding: 10px 5px;
-    margin-bottom: 5px;
-
     color: #1F3445;
     text-decoration: none;
-    font-size: 15px;
-
     border-bottom: 1px solid #E9ECEF;
-    transition: 0.3s;
 }
 
-.menu-servicios a:hover {
+aside.menu-servicios a:hover {
     color: #D62828;
-    padding-left: 10px;
 }
