@@ -23,7 +23,7 @@ body{
 .top-header{
 
     width: 100%;
-    background: #E9ECEF;
+    background: #0b2239;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,7 +119,7 @@ body{
 
 .menu-textiles span{
 
-    color: #0b2239;
+    color: #E9ECEF;
     font-size: 18px;
     font-weight: bold;
 
