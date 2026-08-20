@@ -85,7 +85,7 @@ body{
     display: block;
     padding: 20px 0;
     text-decoration: none;
-    color:#0b2239;
+    color:#ffffff;
     font-size: 18px;
     font-weight: bold;
     transition: .3s;
@@ -330,13 +330,13 @@ body{
 .servicios{
 
     padding: 90px 8%;
-    background: #f8f8f8;
+    background: #E9ECEF;
 }
 
 .servicios h2{
 
     text-align: center;
-    color: #0B3D91;
+    color: #1F3445;
     font-size: 42px;
     margin-bottom: 60px;
 }
@@ -385,13 +385,13 @@ body{
 .galeria{
 
     padding: 90px 8%;
-    background: white;
+    background: #101820;
 }
 
 .galeria h2{
 
     text-align: center;
-    color:#0B3D91;
+    color:#ffffff;
     font-size: 42px;
     margin-bottom: 50px;
 }
@@ -411,7 +411,7 @@ body{
     height: 50px;
     border: none;
     border-radius: 50%;
-    background: #0B3D91;
+    background: #E30613;
     color:white;
     font-size: 24px;
     cursor:pointer;
@@ -680,6 +680,7 @@ width:150px;
 .historia-texto{
 
     text-align:center;
+    color:#1f3445;
 
 }
 
@@ -698,6 +699,7 @@ width:150px;
 .card-info{
 
     padding:35px 25px;
+    color:#1f3445;
 
 }
 
@@ -711,7 +713,7 @@ width:150px;
 .porque h2{
 
     text-align:center;
-    color:#0B3D91;
+    color:#1f3445;
     font-size:42px;
     margin-bottom:60px;
 
@@ -786,6 +788,7 @@ width:150px;
 .servicio-texto{
 
     text-align:center;
+    color:#1f3445;
 
 }
 
@@ -963,7 +966,7 @@ width:150px;
 
 .card-info h2{
 
-    color:#0B3D91;
+    color:#1f3445;
     font-size:34px;
     margin-bottom:20px;
 
@@ -989,7 +992,7 @@ width:150px;
 .porque h2{
 
     text-align:center;
-    color:#0B3D91;
+    color:#1f3445;
     font-size:42px;
     margin-bottom:60px;
 
@@ -1048,7 +1051,7 @@ width:150px;
 .formulario-contacto h2{
 
     text-align:center;
-    color:#0B3D91;
+    color:#1f3445;
     font-size:42px;
     margin-bottom:50px;
 
