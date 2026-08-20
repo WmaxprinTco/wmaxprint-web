@@ -67,6 +67,70 @@ body{
     z-index: 1000;
 }
 
+/*---------- SUBMENÚ NUESTROS SERVICIOS ----------*/
+
+.menu .dropdown {
+    position: relative;
+}
+
+.menu .dropdown > a {
+    white-space: nowrap;
+}
+
+/* Submenú oculto */
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 270px;
+
+    background: white;
+    padding: 10px 0;
+
+    border-radius: 0 0 12px 12px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.18);
+
+    z-index: 2000;
+}
+
+/* Mostrar al pasar el mouse */
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+/* Elementos del submenú */
+
+.menu .submenu li {
+    margin: 0;
+    width: 100%;
+}
+
+.menu .submenu li a {
+    color: #527D9B;
+    font-size: 16px;
+    padding: 12px 18px;
+    text-align: left;
+}
+
+/* Quitar la línea inferior del menú principal */
+
+.menu .submenu li a::after {
+    display: none;
+}
+
+/* Hover de cada servicio */
+
+.menu .submenu li a:hover {
+    background: #E9ECEF;
+    color: #D62828;
+}
+
 .menu ul{
 
     display: flex;
