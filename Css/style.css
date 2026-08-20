@@ -14,7 +14,7 @@ body{
 
     font-family: Arial, Helvetica, sans-serif;
     background: #E9ECEF;
-    color:#27313A;
+    color: #151e3d;
     overflow-x:hidden;
 }
 
@@ -23,7 +23,7 @@ body{
 .top-header{
 
     width: 100%;
-    background: #101820;
+    background: #2C3C4C;
     display: flex;
     justify-content: space-between;
     align-items: center;
