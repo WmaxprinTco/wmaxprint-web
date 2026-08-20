@@ -107,6 +107,11 @@ body{
     margin:auto;
 }
 
+.menu a.activo {
+    color: #D62828;
+}
+
+
 /*----------TEXTILES / WTEXPRINT----------*/
 
 .menu-textiles{
@@ -324,10 +329,9 @@ body{
 }
 
 .menu-servicios a:hover {
-    background: #D62828;
-    color: white;
-    padding-left: 22px;
-
+    background: transparent;
+    color:#D62828;
+    padding-left:22px;
 }
 
 /*----------NUESTROS SERVICIOS----------*/
