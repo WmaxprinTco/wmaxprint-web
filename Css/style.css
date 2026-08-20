@@ -13,8 +13,8 @@ html{
 body{
 
     font-family: Arial, Helvetica, sans-serif;
-    background: #E9ECEF;
-    color: #0b2239;
+    background: #0b2239;
+    color: #E9ECEF;
     overflow-x:hidden;
 }
 
@@ -84,7 +84,7 @@ body{
 
     display: block;
     padding: 20px 0;
-    text-decoration: none;
+    text-decoration:none;
     color:#ffffff;
     font-size: 18px;
     font-weight: bold;
