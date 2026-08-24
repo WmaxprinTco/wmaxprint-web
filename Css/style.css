@@ -103,7 +103,7 @@ body{
 
     width: 100%;
 
-    background: #E9ECEF;
+    background: #1F3445;
 
     box-shadow: 0px 2px 10px rgba(0,0,0,.15);
 
@@ -200,14 +200,12 @@ body{
     white-space: nowrap;
 }
 
-
 /* HOVER */
 
 .menu > ul > li > a:hover {
 
     color: #D62828;
 }
-
 
 /* LINEA ROJA */
 
