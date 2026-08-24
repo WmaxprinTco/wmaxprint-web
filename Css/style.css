@@ -105,7 +105,9 @@ body{
 
     background: #E9ECEF;
 
-    position: sticky;
+    box-shadow: 0px 2px 10px rgba(0,0,0,.15);
+
+    position: relative;
 
     z-index: 2000;
 }
@@ -151,43 +153,63 @@ body{
     color: #D62828;
 }
 
-/*---------- SUBMENÚS DEL MENU ----------*/
+/*---------- SUBMENÚS ----------*/
 
 .menu > ul {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     list-style: none;
+
     gap: 35px;
 }
 
-/* Cada categoría */
+
+/* CADA ELEMENTO DEL MENU */
 
 .menu > ul > li {
+
     margin: 0;
+
     position: relative;
 }
 
-/* Enlaces principales */
+
+/* ENLACES PRINCIPALES */
 
 .menu > ul > li > a {
+
     display: block;
+
     padding: 18px 5px;
+
     text-decoration: none;
+
     color: white;
+
     font-size: 18px;
+
     font-weight: bold;
+
     transition: .3s;
+
     white-space: nowrap;
 }
 
-/* Hover de categorías */
+
+/* HOVER */
 
 .menu > ul > li > a:hover {
+
     color: #D62828;
 }
 
-/* Línea debajo */
+
+/* LINEA ROJA */
 
 .menu > ul > li > a::after {
 
@@ -206,21 +228,22 @@ body{
     margin: auto;
 }
 
-/* Línea al pasar el mouse */
 
 .menu > ul > li > a:hover::after {
 
     width: 100%;
 }
 
-/*---------- SUBMENÚ ----------*/
+
+/*---------- SUBMENU ----------*/
 
 .menu > ul > li.dropdown {
+
     position: relative;
 }
 
 
-/* Submenú oculto */
+/* SUBMENU OCULTO */
 
 .menu > ul > li.dropdown > .submenu {
 
@@ -229,11 +252,16 @@ body{
     position: absolute;
 
     top: 100%;
+
     left: 50%;
 
     transform: translateX(-50%);
 
     width: 270px;
+
+    max-height: 500px;
+
+    overflow-y: auto;
 
     background: white;
 
@@ -249,7 +277,7 @@ body{
 }
 
 
-/* Mostrar submenú */
+/* MOSTRAR SUBMENU */
 
 .menu > ul > li.dropdown:hover > .submenu {
 
@@ -257,7 +285,7 @@ body{
 }
 
 
-/* Elementos del submenú */
+/* ELEMENTOS DEL SUBMENU */
 
 .menu > ul > li.dropdown > .submenu > li {
 
@@ -267,7 +295,7 @@ body{
 }
 
 
-/* Enlaces del submenú */
+/* ENLACES DEL SUBMENU */
 
 .menu > ul > li.dropdown > .submenu > li > a {
 
@@ -282,10 +310,12 @@ body{
     text-align: left;
 
     text-decoration: none;
+
+    white-space: normal;
 }
 
 
-/* Quitar línea roja del submenú */
+/* QUITAR LINEA ROJA */
 
 .menu > ul > li.dropdown > .submenu > li > a::after {
 
@@ -293,7 +323,7 @@ body{
 }
 
 
-/* Hover del submenú */
+/* HOVER SUBMENU */
 
 .menu > ul > li.dropdown > .submenu > li > a:hover {
 
@@ -303,11 +333,11 @@ body{
 }
 
 
-/*---------- TITULOS DENTRO DEL SUBMENU ----------*/
+/* TITULOS BANDERINES / BASES */
 
 .menu .submenu .submenu-titulo {
 
-    padding: 10px 18px 6px;
+    padding: 12px 18px 7px;
 
     color: #1F3445;
 
