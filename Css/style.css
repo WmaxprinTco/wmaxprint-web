@@ -232,14 +232,12 @@ body{
     width: 100%;
 }
 
-
 /*---------- SUBMENU ----------*/
 
 .menu > ul > li.dropdown {
 
     position: relative;
 }
-
 
 /* SUBMENU OCULTO */
 
@@ -274,14 +272,12 @@ body{
     list-style: none;
 }
 
-
 /* MOSTRAR SUBMENU */
 
 .menu > ul > li.dropdown:hover > .submenu {
 
     display: block;
 }
-
 
 /* ELEMENTOS DEL SUBMENU */
 
@@ -291,7 +287,6 @@ body{
 
     width: 100%;
 }
-
 
 /* ENLACES DEL SUBMENU */
 
@@ -312,14 +307,12 @@ body{
     white-space: normal;
 }
 
-
 /* QUITAR LINEA ROJA */
 
 .menu > ul > li.dropdown > .submenu > li > a::after {
 
     display: none;
 }
-
 
 /* HOVER SUBMENU */
 
@@ -329,7 +322,6 @@ body{
 
     color: #D62828;
 }
-
 
 /* TITULOS BANDERINES / BASES */
 
@@ -358,7 +350,7 @@ body{
 
 .menu-textiles span{
 
-    color: #0b2239;
+    color: #E9ECEF;
     font-size: 18px;
     font-weight: bold;
 
