@@ -105,21 +105,19 @@ body{
 
     background: #E9ECEF;
 
-    box-shadow: 0px 2px 10px rgba(0,0,0,.15);
-
     position: sticky;
 
-    top: 0;
-
-    z-index: 1000;
+    z-index: 2000;
 }
 /*---------- SEGUNDA BARRA ----------*/
 
 .menu-segundo {
 
     margin-top: 0;
- 
-    box-shadow: none;
+
+    position: relative;
+
+    z-index: 1000;
 
     border-top: 1px solid rgba(255,255,255,.15);
 }
@@ -153,114 +151,172 @@ body{
     color: #D62828;
 }
 
-/*---------- SUBMENÚ NUESTROS SERVICIOS ----------*/
+/*---------- SUBMENÚS DEL MENU ----------*/
 
-.menu .dropdown {
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+/* Cada categoría */
+
+.menu > ul > li {
+    margin: 0;
     position: relative;
 }
 
-.menu .dropdown > a {
+/* Enlaces principales */
+
+.menu > ul > li > a {
+    display: block;
+    padding: 18px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
     white-space: nowrap;
 }
 
+/* Hover de categorías */
+
+.menu > ul > li > a:hover {
+    color: #D62828;
+}
+
+/* Línea debajo */
+
+.menu > ul > li > a::after {
+
+    content: "";
+
+    display: block;
+
+    width: 0;
+
+    height: 3px;
+
+    background: #D62828;
+
+    transition: .3s;
+
+    margin: auto;
+}
+
+/* Línea al pasar el mouse */
+
+.menu > ul > li > a:hover::after {
+
+    width: 100%;
+}
+
+/*---------- SUBMENÚ ----------*/
+
+.menu > ul > li.dropdown {
+    position: relative;
+}
+
+
 /* Submenú oculto */
 
-.menu .submenu {
+.menu > ul > li.dropdown > .submenu {
+
     display: none;
+
     position: absolute;
+
     top: 100%;
     left: 50%;
+
     transform: translateX(-50%);
 
     width: 270px;
 
     background: white;
+
     padding: 10px 0;
 
     border-radius: 0 0 12px 12px;
 
     box-shadow: 0 10px 25px rgba(0,0,0,.18);
 
-    z-index: 2000;
-}
+    z-index: 9999;
 
-/* Mostrar al pasar el mouse */
-
-.menu .dropdown:hover .submenu {
-    display: block;
-}
-
-/* Elementos del submenú */
-
-.menu .submenu li {
-    margin: 0;
-    width: 100%;
-}
-
-.menu .submenu li a {
-    color: #527D9B;
-    font-size: 16px;
-    padding: 12px 18px;
-    text-align: left;
-}
-
-/* Quitar la línea inferior del menú principal */
-
-.menu .submenu li a::after {
-    display: none;
-}
-
-/* Hover de cada servicio */
-
-.menu .submenu li a:hover {
-    background: #E9ECEF;
-    color: #D62828;
-}
-
-.menu ul{
-
-    display: flex;
-    justify-content:center;
-    align-items: center;
     list-style: none;
 }
 
-.menu li{
 
-    margin: 0 35px;
-}
+/* Mostrar submenú */
 
-.menu a{
+.menu > ul > li.dropdown:hover > .submenu {
 
     display: block;
-    padding: 20px 0;
-    text-decoration:none;
-    color:#1F3445;
-    font-size: 18px;
-    font-weight: bold;
-    transition: .3s;
 }
 
-.menu a:hover{
 
-    color:#E30613;
+/* Elementos del submenú */
+
+.menu > ul > li.dropdown > .submenu > li {
+
+    margin: 0;
+
+    width: 100%;
 }
 
-.menu > ul > li > a::after {
 
-    content: "";
+/* Enlaces del submenú */
+
+.menu > ul > li.dropdown > .submenu > li > a {
+
     display: block;
-    width: 0;
-    height: 3px;
-    background: #e30613;
-    transition: .3s;
-    margin: auto;
+
+    color: #527D9B;
+
+    font-size: 16px;
+
+    padding: 12px 18px;
+
+    text-align: left;
+
+    text-decoration: none;
 }
 
-.menu a.activo {
+
+/* Quitar línea roja del submenú */
+
+.menu > ul > li.dropdown > .submenu > li > a::after {
+
+    display: none;
+}
+
+
+/* Hover del submenú */
+
+.menu > ul > li.dropdown > .submenu > li > a:hover {
+
+    background: #E9ECEF;
+
     color: #D62828;
 }
 
+
+/*---------- TITULOS DENTRO DEL SUBMENU ----------*/
+
+.menu .submenu .submenu-titulo {
+
+    padding: 10px 18px 6px;
+
+    color: #1F3445;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    border-bottom: 1px solid #E9ECEF;
+}
 
 /*----------TEXTILES / WTEXPRINT----------*/
 
