@@ -97,6 +97,24 @@ body{
     color:#D62828;
 }
 
+/*---------- BARRA DE SERVICIOS ----------*/
+
+.menu {
+
+    width: 100%;
+
+    background: #1F3445;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,.15);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
 /*----------MENU SUPERIOR---------*/
 
 .menu > ul {
