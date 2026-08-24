@@ -46,35 +46,48 @@ document.querySelectorAll('a[href^="#"]'). forEach(anchor => {
 
 /*CARRUSEL*/
 
+/*---------- CARRUSEL ----------*/
+
 const carrusel = document.querySelector(".carrusel-contenedor");
 
 const siguiente = document.querySelector(".next");
 
 const anterior = document.querySelector(".prev");
 
-if(carrusel && siguiente && anterior){
 
-   siguiente.addEventListener("click", () => {
+if (carrusel && siguiente && anterior) {
 
-    carrusel.scrollBy({
+    siguiente.addEventListener("click", () => {
 
-        left: 320,
-        behavior: "smooth"
+        const anchoImagen = carrusel.querySelector("img").offsetWidth;
+
+        carrusel.scrollBy({
+
+            left: anchoImagen + 20,
+
+            behavior: "smooth"
+
+        });
+
     });
 
-});
 
-   anterior.addEventListener("click", () => {
+    anterior.addEventListener("click", () => {
 
-    carrusel.scrollBy({
+        const anchoImagen = carrusel.querySelector("img").offsetWidth;
 
-        left: -320,
-        behavior: "smooth"
+        carrusel.scrollBy({
+
+            left: -(anchoImagen + 20),
+
+            behavior: "smooth"
+
+        });
+
     });
-
-});
 
 }
+
 
 /*MENU ACTIVO*/
 
