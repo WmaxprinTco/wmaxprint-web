@@ -61,7 +61,7 @@ body{
 
     display: block;
     text-decoration: none;
-    color:#1F3445;
+    color:#E9ECEF;
     font-size: 18px;
     text-align: center;
     padding: 8px 5px;
@@ -70,7 +70,7 @@ body{
 
 .menu-superior a:hover {
 
-    color: #E9ECEF;
+    color: #1F3445;
 }
 
 .menu-superior a.activo {
