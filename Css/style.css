@@ -1705,3 +1705,35 @@ aside.menu-servicios a:hover {
 
     color: #D62828;
 }
+
+/*----IMAGENES PRODUCTO----*/
+
+.producto-imagen {
+
+    min-height: 100vh;
+
+    background: #E9ECEF;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px;
+}
+
+.producto-imagen img {
+
+    max-width: 100%;
+
+    width: 1000px;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
