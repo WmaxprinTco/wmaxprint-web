@@ -16,8 +16,12 @@
 
 <body>
 
+    <main class="producto-imagen">
+
     <img src="Img/Productos/arana-nacional.jpg"
          alt="Araña Nacional">
+
+    </main>
 
 </body>
 
