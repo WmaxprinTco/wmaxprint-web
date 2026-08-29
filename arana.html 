@@ -1,29 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-          
-    <title>Araña Nacional | WMAXPRINT</title>
-
-    <link rel="stylesheet" href="Css/style.css">
-
+    <title>Araña Nacional</title>
 </head>
-
 <body>
-
-    <main class="producto-imagen">
-
-    <img src="Img/Imagenproductos/arananacional.png"
-         alt="Araña Nacional">
-
-    </main>
-
+    <h1>ARAÑA NACIONAL</h1>
+    <p>Esta página sí está funcionando.</p>
 </body>
-
 </html>
 
