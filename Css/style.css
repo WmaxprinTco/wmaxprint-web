@@ -1712,7 +1712,7 @@ aside.menu-servicios a:hover {
 
     background: #E9ECEF;
 
-    padding: 70px 8% 90px;
+    padding: 60px 3% 80px;
 }
 .producto-contenedor{
 
@@ -1739,6 +1739,8 @@ aside.menu-servicios a:hover {
 
     display: flex;
 
+    width: 100%;
+
     justify-content: center;
 
     align-items: center;
@@ -1748,9 +1750,9 @@ aside.menu-servicios a:hover {
 
 .producto-imagen img {
 
-    max-width: 1000%;
+    max-width: 1600px;
 
-    width: 100px;
+    width: 100%;
 
     height: auto;
 
