@@ -881,10 +881,38 @@ line-height:28px;
 
 .menu-servicios{
 
-margin-top:30px;
+    width: 90%;
+    margin: 25px auto;
+    padding: 20px;
 
 }
 
+.menu-servicios ul{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu-servicios li{
+
+    width: 100%;
+    margin: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+
+}
+
+.menu-servicios a{
+
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
 .grid-servicios{
 
 grid-template-columns:1fr;
@@ -893,8 +921,10 @@ grid-template-columns:1fr;
 
 .carrusel-contenedor img{
 
-width:260px;
-height:190px;
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
 
 }
 
