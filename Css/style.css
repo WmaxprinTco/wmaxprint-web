@@ -1830,3 +1830,13 @@ aside.menu-servicios a:hover {
 
     transform: translateY(-3px);
 }
+
+/*---------- DESPLAZAMIENTO EN COMPUTADOR ----------*/
+
+html, body {
+    overflow-x: auto;
+}
+
+body {
+    min-width: 1000px;
+}
