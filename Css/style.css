@@ -2046,12 +2046,13 @@ aside.menu-servicios a:hover {
 
 /*---------- DESPLAZAMIENTO EN COMPUTADOR ----------*/
 
-html, body {
-    overflow-x: auto;
-}
+@media (min-width: 769px) {
 
-body {
-    min-width: 1000px;
+    html,
+    body {
+        overflow-x: auto;
+    }
+
 }
 
 /*---------- MENU HAMBURGUESA CELULAR ----------*/
