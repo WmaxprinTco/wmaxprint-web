@@ -1776,6 +1776,8 @@ aside.menu-servicios a:hover {
     align-items: center;
 
     padding: 0;
+
+    gap: 30px;
 }
 
 .producto-imagen img {
