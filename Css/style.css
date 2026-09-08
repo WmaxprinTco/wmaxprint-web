@@ -963,7 +963,7 @@ justify-content:center;
 
     color: white;
 
-    font-size: 14px;
+    font-size: 12px;
 
     font-weight: bold;
 
@@ -977,7 +977,7 @@ justify-content:center;
 
 .boton-menu-movil .icono-hamburguesa{
 
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
@@ -2046,13 +2046,12 @@ aside.menu-servicios a:hover {
 
 /*---------- DESPLAZAMIENTO EN COMPUTADOR ----------*/
 
-@media (min-width: 769px) {
+html, body {
+    overflow-x: auto;
+}
 
-    html,
-    body {
-        overflow-x: auto;
-    }
-
+body {
+    min-width: 1000px;
 }
 
 /*---------- MENU HAMBURGUESA CELULAR ----------*/
