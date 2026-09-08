@@ -110,3 +110,63 @@ enlacesMenu.forEach(enlace => {
     }
 
 });
+
+/*---------- MENU HAMBURGUESA PARA CELULAR ----------*/
+
+const menus = document.querySelectorAll(".menu");
+
+if (menus.length > 0) {
+
+    /* Crear botón automáticamente */
+
+    const botonMenu = document.createElement("button");
+
+    botonMenu.classList.add("boton-menu-movil");
+
+    botonMenu.innerHTML = "☰";
+
+    /* Poner el botón antes del primer menú */
+
+    menus[0].parentNode.insertBefore(botonMenu, menus[0]);
+
+
+    /* Abrir y cerrar menú */
+
+    botonMenu.addEventListener("click", () => {
+
+        document.body.classList.toggle("menus-movil-abiertos");
+
+        if (document.body.classList.contains("menus-movil-abiertos")) {
+
+            botonMenu.innerHTML = "✕";
+
+        } else {
+
+            botonMenu.innerHTML = "☰";
+
+        }
+
+    });
+
+
+    /* Abrir los submenús al tocar cada categoría */
+
+    document.querySelectorAll(".menu .dropdown > a").forEach(enlace => {
+
+        enlace.addEventListener("click", function(e) {
+
+            if (window.innerWidth <= 768) {
+
+                e.preventDefault();
+
+                const padre = this.parentElement;
+
+                padre.classList.toggle("submenu-abierto");
+
+            }
+
+        });
+
+    });
+
+}
