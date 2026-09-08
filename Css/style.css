@@ -842,18 +842,6 @@ padding:20px;
 
 }
 
-.menu ul{
-
-flex-direction:column;
-
-}
-
-.menu li{
-
-margin:10px 0;
-
-}
-
 .hero{
 
 min-height:auto;
@@ -887,32 +875,6 @@ line-height:28px;
 
 }
 
-.menu-servicios ul{
-
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 0;
-    margin: 0;
-
-}
-
-.menu-servicios li{
-
-    width: 100%;
-    margin: 0;
-    padding: 10px 15px;
-    box-sizing: border-box;
-
-}
-
-.menu-servicios a{
-
-    display: block;
-    width: 100%;
-    text-align: center;
-
-}
 .grid-servicios{
 
 grid-template-columns:1fr;
@@ -1841,4 +1803,155 @@ html, body {
 
 body {
     min-width: 1000px;
+}
+
+/*---------- MENU HAMBURGUESA CELULAR ----------*/
+
+.boton-menu-movil {
+
+    display: none;
+
+}
+
+
+/*---------- SOLO CELULAR ----------*/
+
+@media(max-width:768px){
+
+    /* Botón de tres rayitas */
+
+    .boton-menu-movil {
+
+        display: block;
+
+        width: 100%;
+
+        background: #102845;
+
+        color: white;
+
+        border: none;
+
+        padding: 15px;
+
+        font-size: 28px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+    }
+
+
+    /* Ocultar los dos menús inicialmente */
+
+    .menu > ul {
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        width: 100%;
+
+        padding: 0;
+
+        margin: 0;
+
+    }
+
+
+    /* Mostrar los menús cuando se presiona ☰ */
+
+    body.menus-movil-abiertos .menu > ul {
+
+        display: flex;
+
+    }
+
+
+    /* Elementos principales */
+
+    .menu > ul > li {
+
+        width: 100%;
+
+        text-align: center;
+
+        margin: 0;
+
+        border-top: 1px solid rgba(255,255,255,.10);
+
+    }
+
+
+    /* Enlaces principales */
+
+    .menu > ul > li > a {
+
+        padding: 16px 10px;
+
+        font-size: 16px;
+
+        display: block;
+
+    }
+
+
+    /* Textiles */
+
+    .menu-textiles {
+
+        justify-content: center;
+
+        padding: 12px 0;
+
+    }
+
+
+    /* Ocultar submenús inicialmente */
+
+    .menu > ul > li.dropdown > .submenu {
+
+        display: none;
+
+        position: static;
+
+        transform: none;
+
+        width: 100%;
+
+        max-height: none;
+
+        border-radius: 0;
+
+        box-shadow: none;
+
+        padding: 0;
+
+    }
+
+
+    /* Submenú abierto */
+
+    .menu > ul > li.dropdown.submenu-abierto > .submenu {
+
+        display: block;
+
+    }
+
+
+    /* Elementos del submenú */
+
+    .menu > ul > li.dropdown > .submenu > li > a {
+
+        padding: 12px 20px;
+
+        text-align: center;
+
+        font-size: 14px;
+
+    }
+
 }
