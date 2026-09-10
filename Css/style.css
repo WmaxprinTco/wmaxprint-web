@@ -800,7 +800,7 @@ footer{
 
 /*----------RESPONSIVE TABLET----------*/
 
-@(max-width:992px){
+@media(max-width:992px){
 
 .hero-contenido{
 
@@ -827,12 +827,11 @@ text-align:center;
 justify-content:center;
 
 }
-
 }
 
 /*----------RESPONSIVE CELULAR----------*/
 
-@(max-width:768px){
+@media(max-width:768px){
 
       /*---------- HEADER CELULAR ----------*/
 
@@ -854,7 +853,7 @@ justify-content:center;
         padding:20px;
 
     }
-
+}
 
     /*---------- LOGO ----------*/
 
