@@ -131,13 +131,13 @@ if (menus.length > 0) {
 
     /* Poner botón dentro del HEADER */
 
-   const headerMovil = document.querySelector(".top-header");
-   
-    if (header) {
+ const headerMovil = document.querySelector(".top-header");
 
-        header.appendChild(botonMenu);
+if (headerMovil) {
 
-    }
+    headerMovil.appendChild(botonMenu);
+
+}
 
 
     /* Abrir y cerrar menú */
