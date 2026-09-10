@@ -975,7 +975,7 @@ aside.menu-servicios{
 /*---------- MENÚ LATERAL DE SERVICIOS ----------*/
 
 .menus-servicios-movil{
-    position:fixed;
+    position:absolute;
     top: 115px;
     left:0;
 
