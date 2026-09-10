@@ -2165,5 +2165,9 @@ html, body {
     display: none;
 
 }
-
+@media (max-width: 768px) {
+    aside.menu-servicios {
+        display: none !important;
+    }
+}
 
