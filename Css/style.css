@@ -1202,27 +1202,42 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
     .historia{
 
-        grid-template-columns:1fr;
-
-        text-align:center;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    width:100%;
+    padding:0 20px;
+    box-sizing:border-box;
+}
 
     }
 
 
     .historia-texto{
 
-        text-align:center;
-
-        color:#1f3445;
-
-    }
+    width:100%;
+    max-width:100%;
+    text-align:left;
+    color:#1f3445;
+    box-sizing:border-box;
+}
 
 
     .historia-texto p{
 
-        text-align:justify;
+    text-align:justify;
+    line-height:1.7;
+    margin:0;
+}
 
-    }
+.historia img{
+    display:block;
+    width:100%;
+    max-width:500px;
+    height:auto;
+    margin:0 auto;
+    object-fit:cover;
+}
 
 
     .mision-vision{
@@ -1369,8 +1384,6 @@ body.menus-movil-abiertos .menus-servicios-movil{
     gap:10px;
 }
 
-
-}
 
 /*----------QUIENES SOMOS----------*/
 
