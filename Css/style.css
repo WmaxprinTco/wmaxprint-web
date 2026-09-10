@@ -800,7 +800,7 @@ footer{
 
 /*----------RESPONSIVE TABLET----------*/
 
-@media(max-width:992px){
+@(max-width:992px){
 
 .hero-contenido{
 
@@ -832,7 +832,7 @@ justify-content:center;
 
 /*----------RESPONSIVE CELULAR----------*/
 
-@media(max-width:768px){
+@(max-width:768px){
 
       /*---------- HEADER CELULAR ----------*/
 
@@ -981,28 +981,34 @@ justify-content:center;
 
     }
 
+/*---------- MENUS DE SERVICIOS ----------*/
 
-    /*---------- MENUS DE SERVICIOS ----------*/
-
-    /* MENÚ DE SERVICIOS LATERAL */
+/* PANEL LATERAL */
 
 .menu{
-    position:relative;
-    width:100%;
-    height:auto;
-    background:transparent;
-    transform:none;
-    transition:none;
-    overflow:visible;
-    padding-top:0;
-    box-shadow:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:85%;
+    max-width:330px;
+    height:100vh;
+    background:#102845;
+    z-index:9999;
+    transform:translateX(-100%);
+    transition:transform .3s ease;
+    overflow-y:auto;
+    padding-top:80px;
+    box-shadow:8px 0 20px rgba(0,0,0,.25);
 }
+
+/* MOSTRAR PANEL */
 
 body.menus-movil-abiertos .menu{
     transform:translateX(0);
-        display:block;
 }
-}
+
+
+/* CATEGORIAS */
 
 .menu > ul{
     display:flex;
@@ -1013,93 +1019,60 @@ body.menus-movil-abiertos .menu{
     margin:0;
 }
 
-    /* CATEGORIAS PRINCIPALES */
+.menu > ul > li{
+    width:100%;
+    margin:0;
+    text-align:left;
+    border-top:1px solid rgba(255,255,255,.10);
+}
 
-    .menu > ul > li{
-
-        width:100%;
-
-        margin:0;
-
-        text-align:center;
-
-        border-top:1px solid rgba(255,255,255,.10);
-
-    }
-
-
-    .menu > ul > li > a{
-
-        padding:15px 10px;
-
-        font-size:16px;
-
-    }
+.menu > ul > li > a{
+    display:block;
+    padding:15px 20px;
+    font-size:16px;
+    color:white;
+}
 
 
-    /*---------- SUBMENUS ----------*/
+/*---------- SUBMENUS ----------*/
 
-    .menu > ul > li.dropdown > .submenu{
-
-        display:none;
-
-        position:static;
-
-        transform:none;
-
-        width:100%;
-
-        max-height:none;
-
-        overflow:visible;
-
-        padding:0;
-
-        margin:0;
-
-        border-radius:0;
-
-        box-shadow:none;
-
-        background:white;
-
-    }
+.menu > ul > li.dropdown > .submenu{
+    display:none;
+    position:static;
+    transform:none;
+    width:100%;
+    max-height:none;
+    overflow:visible;
+    padding:0;
+    margin:0;
+    border-radius:0;
+    box-shadow:none;
+    background:white;
+}
 
 
-    /* MOSTRAR SUBMENU AL TOCAR CATEGORIA */
+/* MOSTRAR SUBMENU AL TOCAR CATEGORIA */
 
-    .menu > ul > li.dropdown.submenu-abierto > .submenu{
-
-        display:block;
-
-    }
+.menu > ul > li.dropdown.submenu-abierto > .submenu{
+    display:block;
+}
 
 
-    /* ELEMENTOS DEL SUBMENU */
+/* ELEMENTOS DEL SUBMENU */
 
-    .menu > ul > li.dropdown > .submenu > li{
+.menu > ul > li.dropdown > .submenu > li{
+    width:100%;
+    margin:0;
+}
 
-        width:100%;
-
-        margin:0;
-
-    }
-
-
-    .menu > ul > li.dropdown > .submenu > li > a{
-
-        display:block;
-
-        padding:12px 20px;
-
-        text-align:center;
-
-        font-size:14px;
-
-        color:#527D9B;
-
-    }
-
+.menu > ul > li.dropdown > .submenu > li > a{
+    display:block;
+    padding:12px 25px;
+    text-align:left;
+    font-size:14px;
+    color:#527D9B;
+}
+   
 
     /*---------- RESTO DE TU RESPONSIVE ----------*/
 
