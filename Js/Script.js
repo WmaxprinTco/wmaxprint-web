@@ -7,20 +7,29 @@ const header=document.querySelector(".top-header");
 if (header){
 
 window.addEventListener("scroll",() => {
- 
-    if(window.scrollY>50){
-  
-        header.style.padding="18px 70px";
-        header.style.background="#0b2239";
-        header.style.boxShadow="0 8px 20px rgba(0, 0, 0, .25)";
 
-    }else{
+    /* SOLO COMPUTADOR */
 
-        header.style.padding="18px 70px";
-        header.style.background="#0B2239";
-        header.style.boxShadow="none";
+    if(window.innerWidth > 768){
+
+        if(window.scrollY > 50){
+
+            header.style.padding="18px 70px";
+            header.style.background="#0b2239";
+            header.style.boxShadow="0 8px 20px rgba(0, 0, 0, .25)";
+
+        }else{
+
+            header.style.padding="18px 70px";
+            header.style.background="#0B2239";
+            header.style.boxShadow="none";
+
+        }
+
     }
+
 });
+
 }
 
 /*SCROLL SUAVE*/
