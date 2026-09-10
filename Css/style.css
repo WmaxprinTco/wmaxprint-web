@@ -975,33 +975,36 @@ aside.menu-servicios{
 /*---------- MENÚ LATERAL DE SERVICIOS ----------*/
 
 .menus-servicios-movil{
-    position:absolute;
-    top: 0;
-    left:0;
+    position:relative;
+    top:auto;
+    left:auto;
 
-    width:85%;
-    max-width:330px;
-    height:100vh;
+    width:100%;
+    max-width:none;
+    height:0;
 
     background:#102845;
 
     z-index:9999;
 
-    transform:translateX(-100%);
-    transition:transform .3s ease;
+    transform:none;
+    transition:none;
 
-    overflow-y:auto;
+    overflow-y:hidden;
 
-    padding:80px 0 20px;
+    padding:0;
 
-    box-shadow:8px 0 20px rgba(0,0,0,.25);
+    box-shadow:none;
 }
 
 
 /* ABRIR MENÚ */
 
 body.menus-movil-abiertos .menus-servicios-movil{
-    transform:translateX(0);
+    height:auto;
+    overflow:visible;
+    padding:0 0 20px;
+    
 }
 
 
