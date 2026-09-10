@@ -2115,14 +2115,20 @@ aside.menu-servicios a:hover {
     transform: translateY(-3px);
 }
 
-/*---------- DESPLAZAMIENTO EN COMPUTADOR ----------*/
+/*---------- DESPLAZAMIENTO ----------*/
 
 html, body {
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
-body {
-    min-width: 1000px;
+/*---------- ANCHO MÍNIMO SOLO EN COMPUTADOR ----------*/
+
+@media (min-width: 769px) {
+
+    body {
+        min-width: 1000px;
+    }
+
 }
 
 /*---------- MENU HAMBURGUESA CELULAR ----------*/
