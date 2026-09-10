@@ -984,31 +984,34 @@ justify-content:center;
 
     /*---------- MENUS DE SERVICIOS ----------*/
 
-    .menu > ul{
+    /* MENÚ DE SERVICIOS LATERAL */
 
-        display:none;
+.menu{
+    position:relative;
+    width:100%;
+    height:auto;
+    background:transparent;
+    transform:none;
+    transition:none;
+    overflow:visible;
+    padding-top:0;
+    box-shadow:none;
+}
 
-        flex-direction:column;
+body.menus-movil-abiertos .menu{
+    transform:translateX(0);
+        display:block;
+}
+}
 
-        gap:0;
-
-        width:100%;
-
-        padding:0;
-
-        margin:0;
-
-    }
-
-
-    /* ABRIR LOS MENUS AL TOCAR HAMBURGUESA */
-
-    body.menus-movil-abiertos .menu > ul{
-
-        display:flex;
-
-    }
-
+.menu > ul{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    width:100%;
+    padding:0;
+    margin:0;
+}
 
     /* CATEGORIAS PRINCIPALES */
 
@@ -1300,7 +1303,6 @@ justify-content:center;
 
     }
 
-}
 
 /*----------QUIENES SOMOS----------*/
 
