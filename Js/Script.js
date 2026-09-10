@@ -168,7 +168,7 @@ if (headerMovil) {
 
     /* Abrir categorías */
 
-    document.querySelectorAll(".menu-servicios-movil .menu .dropdown > a").forEach(enlace => {
+    document.querySelectorAll(".menu-servicios-movil.menu .dropdown > a").forEach(enlace => {
 
         enlace.addEventListener("click", function(e) {
 
