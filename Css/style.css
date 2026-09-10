@@ -1061,32 +1061,33 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 .menus-servicios-movil .menu > ul > li.dropdown > .submenu{
     display:none !important;
-
     position:static !important;
-
-    transform:none !important;
-
     width:100%;
-
     max-height:none !important;
-
     overflow:visible !important;
-
     padding:0;
     margin:0;
-
-    border-radius:0;
-
-    box-shadow:none;
-
+    transform:none !important;
     background:white;
 }
 
-
-/* SUBMENÚ ABIERTO */
-
 .menus-servicios-movil .menu > ul > li.dropdown.submenu-abierto > .submenu{
     display:block !important;
+}
+
+.menus-servicios-movil .menu > ul > li.dropdown > .submenu > li{
+    width:100%;
+    margin:0;
+}
+
+.menus-servicios-movil .menu > ul > li.dropdown > .submenu > li > a{
+    display:block;
+    width:100%;
+    padding:12px 25px;
+    text-align:left;
+    font-size:14px;
+    color:#527D9B;
+    background:white;
 }
 
 
