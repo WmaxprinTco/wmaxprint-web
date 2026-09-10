@@ -113,7 +113,7 @@ enlacesMenu.forEach(enlace => {
 
 /*---------- MENU HAMBURGUESA PARA CELULAR ----------*/
 
-const menus = document.querySelectorAll(".menu-servicios-movil.menu");
+const menus = document.querySelectorAll(".menus-servicios-movil .menu");
 
 if (menus.length > 0) {
 
@@ -131,13 +131,13 @@ if (menus.length > 0) {
 
     /* Poner botón dentro del HEADER */
 
- const headerMovil = document.querySelector(".top-header");
+    const headerMovil = document.querySelector(".top-header");
 
-if (headerMovil) {
+    if (headerMovil) {
 
-    headerMovil.appendChild(botonMenu);
+        headerMovil.appendChild(botonMenu);
 
-}
+    }
 
 
     /* Abrir y cerrar menú */
@@ -168,7 +168,7 @@ if (headerMovil) {
 
     /* Abrir categorías */
 
-    document.querySelectorAll(".menu-servicios-movil.menu .dropdown > a").forEach(enlace => {
+    document.querySelectorAll(".menus-servicios-movil .menu .dropdown > a").forEach(enlace => {
 
         enlace.addEventListener("click", function(e) {
 
