@@ -944,6 +944,11 @@ justify-content:center;
 
     }
 
+/* OCULTAR MENU FLOTANTE DE SERVICIOS EN CELULAR */
+aside.menu-servicios{
+    display:none !important;
+}
+
     /*---------- BOTON HAMBURGUESA ----------*/
 
     .boton-menu-movil{
