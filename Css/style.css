@@ -1315,6 +1315,30 @@ body.menus-movil-abiertos .menus-servicios-movil{
         text-align:left;
 
     }
+
+    /*---------- FOOTER CELULAR ----------*/
+
+.footer{
+    padding:20px 15px;
+}
+
+.footer-contenedor{
+    gap:12px;
+}
+
+.footer-logo img{
+    max-width:110px;
+    height:auto;
+}
+
+.footer-logo{
+    margin-bottom:5px;
+}
+
+.footer-redes{
+    gap:10px;
+}
+
 }
 
 /*----------QUIENES SOMOS----------*/
