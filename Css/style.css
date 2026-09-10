@@ -833,6 +833,10 @@ justify-content:center;
 
 @media(max-width:768px){
 
+    body{
+    min-width:0;
+}
+
       /*---------- HEADER CELULAR ----------*/
 
     .top-header{
