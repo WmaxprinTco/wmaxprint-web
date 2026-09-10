@@ -1126,27 +1126,6 @@ body.menus-movil-abiertos .menus-servicios-movil{
 }
 
 
-.top-header{
-    --alto-header: 115px;
-}
-
-.menus-servicios-movil{
-    position:fixed;
-    top:var(--alto-header);
-    left:0;
-    width:85%;
-    max-width:330px;
-    height:calc(100vh - var(--alto-header));
-    background:#102845;
-    z-index:9999;
-    transform:translateX(-100%);
-    transition:transform .3s ease;
-    overflow-y:auto;
-    padding:20px 0;
-    box-shadow:8px 0 20px rgba(0,0,0,.25);
-}
-
-
     /*---------- RESTO DE TU RESPONSIVE ----------*/
 
     .hero{
