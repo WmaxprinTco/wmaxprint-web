@@ -1205,45 +1205,57 @@ body.menus-movil-abiertos .menus-servicios-movil{
     flex-direction:column;
     gap:30px;
     width:100%;
+    max-width: 100;
     padding:0 20px;
     box-sizing:border-box;
 }
 
-/* El texto va primero */
+/* TEXTO ARRIBA */
+
 .historia-texto{
     order:1;
     width:100%;
-    max-width:100%;
-    text-align:left;
+    max-width:650px;
+    text-align:center;
     color:#1f3445;
     box-sizing:border-box;
 }
 
-/* La imagen va debajo del texto */
-.historia-imagen{
-    order:2;
+.historia-texto h2{
+    text-align:center;
     width:100%;
-    box-sizing:border-box;
+    margin-bottom:25px;
 }
 
 .historia-texto p{
     width:100%;
-    margin:0 0 15px 0;
+    margin:0 0 18px 0;
     text-align:justify;
     line-height:1.7;
     overflow-wrap:break-word;
     word-break:normal;
 }
 
-.historia img{
+/* IMAGEN DEBAJO */
+
+.historia-imagen{
+    order:2;
+    display:block;
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+    box-sizing:border-box;
+}
+
+.historia-imagen img{
     display:block;
     width:100%;
     max-width:600px;
     height:auto;
     margin:0 auto;
     object-fit:cover;
+    border-radius:10px;
 }
-
 
 /*---------- MISION Y VISION EN CELULAR ----------*/
 
