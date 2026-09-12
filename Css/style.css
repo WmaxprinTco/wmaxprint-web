@@ -1218,18 +1218,19 @@ body.menus-movil-abiertos .menus-servicios-movil{
     box-sizing:border-box;
 }
 
-
     .historia-texto p{
 
     text-align:justify;
     line-height:1.7;
     margin:0;
+    width: 100;
+    overflow-wrap: break-word;
 }
 
 .historia img{
     display:block;
     width:100%;
-    max-width:500px;
+    max-width:600px;
     height:auto;
     margin:0 auto;
     object-fit:cover;
@@ -1237,8 +1238,13 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 
     .mision-vision{
-
+        display:grid;
         grid-template-columns:1fr;
+        gap:25px;
+        width:100%;
+        max-width:100%;
+        padding:0 20px;
+        box-sizing:border-box;
 
     }
 
@@ -1246,11 +1252,26 @@ body.menus-movil-abiertos .menus-servicios-movil{
     .card-info{
 
         padding:35px 25px;
-
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
         color:#1f3445;
+        overflow:hidden;
+}
+    .card-info h2,
+    .card-info h3{
+        max-width:100%;
+        overflow-wrap:break-word;
+}
 
-    }
-
+    .card-info p{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        overflow-wrap:break-word;
+        word-wrap:break-word;
+        line-height:1.6;
+}
 
     .porque{
 
