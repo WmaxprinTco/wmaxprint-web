@@ -563,15 +563,15 @@ body{
 
 .todo-un-solo-lugar{
     text-align:center;
-    padding:10px 20px 5px;
+    padding:5px 20px 0;
 }
 
 .todo-un-solo-lugar h2{
-    margin:0;
+    margin:0 0 -5px 0;
     color:#0B3D91;
     font-size:48px;
     font-weight:800;
-    line-height: 1.1;
+    line-height: 1;
 }
 .servicios{
 
