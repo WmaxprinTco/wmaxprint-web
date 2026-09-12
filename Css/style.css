@@ -888,7 +888,7 @@ justify-content:center;
         grid-area:superior;
 
         width:100%;
-        
+
         margin-bottom: 18px;
 
     }
@@ -922,7 +922,6 @@ justify-content:center;
         white-space:nowrap;
 
     }
-
 
     /*---------- ICONOS REDES ----------*/
 
@@ -1127,6 +1126,22 @@ body.menus-movil-abiertos .menus-servicios-movil{
     background: white;
 }
 
+/*---------- WTEXPRINT EN CELULAR ----------*/
+
+.menus-servicios-movil .menu-textiles{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 20px;
+    box-sizing:border-box;
+}
+
+.menus-servicios-movil .btn-wtexprint{
+    padding:8px 14px;
+    font-size:13px;
+    margin:0;
+}
 
     /*---------- RESTO DE TU RESPONSIVE ----------*/
 
@@ -1193,9 +1208,6 @@ body.menus-movil-abiertos .menus-servicios-movil{
     padding:0 20px;
     box-sizing:border-box;
 }
-
-    }
-
 
     .historia-texto{
 
@@ -1344,6 +1356,8 @@ body.menus-movil-abiertos .menus-servicios-movil{
         text-align:left;
 
     }
+
+}
 
     /*---------- FOOTER CELULAR ----------*/
 
