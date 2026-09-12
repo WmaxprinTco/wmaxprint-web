@@ -1213,58 +1213,58 @@ body.menus-movil-abiertos .menus-servicios-movil{
 /*---------- NUESTRA HISTORIA EN CELULAR ----------*/
 
 .historia{
-    display:flex;
-    flex-direction:column;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
     gap:30px;
     width:100%;
-    max-width: 100;
+    max-width:100%;
     padding:0 20px;
     box-sizing:border-box;
 }
 
-/* TEXTO ARRIBA */
-
 .historia-texto{
-    order:1;
-    width:100%;
-    max-width:650px;
-    text-align:center;
+    order:1 !important;
+    display:block;
+    width:100% !important;
+    max-width:700px !important;
+    margin:0 auto !important;
+    text-align:center !important;
     color:#1f3445;
     box-sizing:border-box;
 }
 
 .historia-texto h2{
-    text-align:center;
     width:100%;
-    margin-bottom:25px;
+    text-align:center !important;
+    margin:0 0 25px 0;
 }
 
 .historia-texto p{
     width:100%;
     margin:0 0 18px 0;
-    text-align:justify;
+    text-align:center !important;
     line-height:1.7;
     overflow-wrap:break-word;
     word-break:normal;
 }
 
-/* IMAGEN DEBAJO */
-
 .historia-imagen{
-    order:2;
-    display:block;
-    width:100%;
-    max-width:600px;
-    margin:0 auto;
+    order:2 !important;
+    display:block !important;
+    width:100% !important;
+    max-width:700px !important;
+    margin:0 auto !important;
     box-sizing:border-box;
 }
 
 .historia-imagen img{
-    display:block;
-    width:100%;
-    max-width:600px;
-    height:auto;
-    margin:0 auto;
+    display:block !important;
+    width:100% !important;
+    max-width:700px !important;
+    height:auto !important;
+    margin:0 auto !important;
     object-fit:cover;
     border-radius:10px;
 }
