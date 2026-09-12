@@ -1198,6 +1198,8 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
     }
 
+/*---------- NUESTRA HISTORIA EN CELULAR ----------*/
+
 .historia{
     display:flex;
     flex-direction:column;
@@ -1207,7 +1209,9 @@ body.menus-movil-abiertos .menus-servicios-movil{
     box-sizing:border-box;
 }
 
+/* El texto va primero */
 .historia-texto{
+    order:1;
     width:100%;
     max-width:100%;
     text-align:left;
@@ -1215,12 +1219,20 @@ body.menus-movil-abiertos .menus-servicios-movil{
     box-sizing:border-box;
 }
 
+/* La imagen va debajo del texto */
+.historia-imagen{
+    order:2;
+    width:100%;
+    box-sizing:border-box;
+}
+
 .historia-texto p{
     width:100%;
-    margin:0;
+    margin:0 0 15px 0;
     text-align:justify;
     line-height:1.7;
     overflow-wrap:break-word;
+    word-break:normal;
 }
 
 .historia img{
@@ -1232,9 +1244,12 @@ body.menus-movil-abiertos .menus-servicios-movil{
     object-fit:cover;
 }
 
+
+/*---------- MISION Y VISION EN CELULAR ----------*/
+
 .mision-vision{
     display:grid;
-    grid-template-columns:1fr;
+    grid-template-columns:1fr !important;
     gap:25px;
     width:100%;
     padding:0 20px;
@@ -1243,6 +1258,7 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 .card-info{
     width:100%;
+    min-width:0;
     max-width:100%;
     box-sizing:border-box;
     padding:35px 25px;
@@ -1254,6 +1270,8 @@ body.menus-movil-abiertos .menus-servicios-movil{
 .card-info h3{
     width:100%;
     max-width:100%;
+    margin-left:0;
+    margin-right:0;
     overflow-wrap:break-word;
     word-break:normal;
 }
@@ -1261,79 +1279,68 @@ body.menus-movil-abiertos .menus-servicios-movil{
 .card-info p{
     width:100%;
     max-width:100%;
+    min-width:0;
     box-sizing:border-box;
     overflow-wrap:break-word;
     word-break:normal;
     line-height:1.6;
 }
 
-    .porque{
 
-        padding:90px 8%;
+/*---------- POR QUÉ ELEGIRNOS EN CELULAR ----------*/
 
-        background:#f8f8f8;
+.porque{
+    padding:60px 20px;
+    box-sizing:border-box;
+    width:100%;
+    max-width:100%;
+}
 
-    }
+.porque h2{
+    text-align:center;
+    color:#1f3445;
+    font-size:32px;
+    margin-bottom:40px;
+}
 
+.grid-porque{
+    display:grid;
+    grid-template-columns:1fr !important;
+    gap:25px;
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
 
-    .porque h2{
+.item{
+    width:100%;
+    min-width:0;
+    max-width:100%;
+    box-sizing:border-box;
+    background:white;
+    padding:30px 25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    overflow:hidden;
+}
 
-        text-align:center;
+.item h3{
+    color:#D62828;
+    font-size:24px;
+    margin-bottom:15px;
+    overflow-wrap:break-word;
+}
 
-        color:#1f3445;
-
-        font-size:42px;
-
-        margin-bottom:60px;
-
-    }
-
-
-    .grid-porque{
-
-        display:grid;
-
-        grid-template-columns:repeat(2,1fr);
-
-        gap:35px;
-
-    }
-
-
-    .item{
-
-        background:white;
-
-        padding:35px;
-
-        border-radius:18px;
-
-        box-shadow:0 8px 20px rgba(0,0,0,.12);
-
-    }
-
-
-    .item h3{
-
-        color:#D62828;
-
-        font-size:24px;
-
-        margin-bottom:15px;
-
-    }
-
-
-    .item p{
-
-        color:#555;
-
-        font-size:18px;
-
-        line-height:30px;
-
-    }
-
+.item p{
+    width:100%;
+    max-width:100%;
+    margin:0;
+    color:#555;
+    font-size:18px;
+    line-height:30px;
+    overflow-wrap:break-word;
+    word-break:normal;
+}
 
     .contacto-grid{
 
