@@ -1380,29 +1380,50 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
     }
 
+.servicio-detalle{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center;
+    width:100%;
+    max-width:100%;
+    gap:30px;
+    box-sizing:border-box;
+}
 
-    .servicio-detalle{
+.servicio-texto{
+    order:1 !important;
+    width:100% !important;
+    max-width:700px;
+    margin:0 auto;
+    text-align:center !important;
+    color:#1f3445;
+    box-sizing:border-box;
+}
 
-        grid-template-columns:1fr;
+.servicio-texto h1,
+.servicio-texto h2,
+.servicio-texto h3{
+    text-align:center !important;
+}
 
-        gap:40px;
+.servicio-texto p{
+    width:100%;
+    text-align:center !important;
+    line-height:1.7;
+}
 
-    }
+.servicio-texto ul{
+    text-align:left;
+}
 
-    .servicio-texto{
-
-        text-align:center;
-
-        color:#1f3445;
-
-    }
-
-
-    .servicio-texto ul{
-
-        text-align:left;
-
-    }
+.servicio-detalle > img{
+    order:2 !important;
+    display:block;
+    width:100%;
+    max-width:700px;
+    height:auto;
+    margin:0 auto;
+}
 
 }
 
