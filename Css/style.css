@@ -561,6 +561,17 @@ body{
 
 /*----------NUESTROS SERVICIOS----------*/
 
+.todo-un-solo-lugar{
+    text-align:center;
+    padding:45px 20px 25px;
+}
+
+.todo-un-solo-lugar h2{
+    margin:0;
+    color:#1f3445;
+    font-size:36px;
+    font-weight:700;
+}
 .servicios{
 
     padding: 90px 8%;
