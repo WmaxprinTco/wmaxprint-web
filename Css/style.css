@@ -1198,9 +1198,7 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
     }
 
-
-    .historia{
-
+.historia{
     display:flex;
     flex-direction:column;
     gap:30px;
@@ -1209,8 +1207,7 @@ body.menus-movil-abiertos .menus-servicios-movil{
     box-sizing:border-box;
 }
 
-    .historia-texto{
-
+.historia-texto{
     width:100%;
     max-width:100%;
     text-align:left;
@@ -1218,13 +1215,12 @@ body.menus-movil-abiertos .menus-servicios-movil{
     box-sizing:border-box;
 }
 
-    .historia-texto p{
-
+.historia-texto p{
+    width:100%;
+    margin:0;
     text-align:justify;
     line-height:1.7;
-    margin:0;
-    width: 100;
-    overflow-wrap: break-word;
+    overflow-wrap:break-word;
 }
 
 .historia img{
@@ -1236,41 +1232,39 @@ body.menus-movil-abiertos .menus-servicios-movil{
     object-fit:cover;
 }
 
-
-    .mision-vision{
-        display:grid;
-        grid-template-columns:1fr;
-        gap:25px;
-        width:100%;
-        max-width:100%;
-        padding:0 20px;
-        box-sizing:border-box;
-
-    }
-
-
-    .card-info{
-
-        padding:35px 25px;
-        width:100%;
-        max-width:100%;
-        box-sizing:border-box;
-        color:#1f3445;
-        overflow:hidden;
-}
-    .card-info h2,
-    .card-info h3{
-        max-width:100%;
-        overflow-wrap:break-word;
+.mision-vision{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+    width:100%;
+    padding:0 20px;
+    box-sizing:border-box;
 }
 
-    .card-info p{
-        width:100%;
-        max-width:100%;
-        box-sizing:border-box;
-        overflow-wrap:break-word;
-        word-wrap:break-word;
-        line-height:1.6;
+.card-info{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+    padding:35px 25px;
+    color:#1f3445;
+    overflow:hidden;
+}
+
+.card-info h2,
+.card-info h3{
+    width:100%;
+    max-width:100%;
+    overflow-wrap:break-word;
+    word-break:normal;
+}
+
+.card-info p{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+    overflow-wrap:break-word;
+    word-break:normal;
+    line-height:1.6;
 }
 
     .porque{
