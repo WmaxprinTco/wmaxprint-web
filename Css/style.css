@@ -1438,7 +1438,8 @@ body.menus-movil-abiertos .menus-servicios-movil{
 }
 
 .footer-logo img{
-    max-width:110px;
+    max-width:220px;
+    width: 220px;
     height:auto;
 }
 
