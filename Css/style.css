@@ -1211,6 +1211,24 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
     }
 
+    .producto-imagen{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+.producto-imagen img{
+    display:block;
+    width:100%;
+    max-width:500px;
+    height:auto;
+    object-fit:contain;
+}
+
 /*---------- NUESTRA HISTORIA EN CELULAR ----------*/
 
 .historia{
