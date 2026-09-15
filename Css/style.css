@@ -1484,8 +1484,35 @@ body.menus-movil-abiertos .menus-servicios-movil{
     gap:10px;
 }
 
+/* ---------- GALERÍA EN MÓVIL ---------- */
 
-/*----------QUIENES SOMOS----------*/
+.galeria-trabajos{
+    padding:60px 20px;
+}
+
+.galeria-trabajos h2{
+    font-size:32px;
+}
+
+.galeria-descripcion{
+    font-size:16px;
+    margin-bottom:30px;
+}
+
+.grid-galeria{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.galeria-item img{
+    height:auto;
+    max-height:none;
+    object-fit:contain;
+}
+
+
+
+/*----------------QUIENES SOMOS---------------*/
 
 /*BANNER INTERNOS*/
 
@@ -2284,3 +2311,52 @@ html, body {
     }
 }
 
+
+/* ---------- GALERÍA DE TRABAJOS ---------- */
+
+.galeria-trabajos{
+    padding:80px 8%;
+    background:#ffffff;
+    text-align:center;
+}
+
+.galeria-trabajos h2{
+    margin:0 0 12px;
+    color:#0B3D91;
+    font-size:42px;
+    font-weight:800;
+}
+
+.galeria-descripcion{
+    margin:0 auto 45px;
+    color:#555;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.grid-galeria{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:25px;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.galeria-item{
+    overflow:hidden;
+    border-radius:15px;
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.galeria-item img{
+    display:block;
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:transform .35s ease;
+}
+
+.galeria-item:hover img{
+    transform:scale(1.05);
+}
