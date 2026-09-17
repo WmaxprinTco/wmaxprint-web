@@ -1509,6 +1509,53 @@ body.menus-movil-abiertos .menus-servicios-movil{
     max-height:none;
     object-fit:contain;
 }
+/* ---------- GALERÍAS EN CELULAR ---------- */
+
+.galeria-trabajos{
+    padding:60px 20px;
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+.galeria-trabajos h2{
+    font-size:32px;
+    line-height:1.2;
+    margin-bottom:12px;
+}
+
+.galeria-descripcion{
+    font-size:16px;
+    line-height:1.6;
+    margin:0 auto 30px;
+    max-width:500px;
+}
+
+.grid-galeria{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+}
+
+.galeria-item{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+    border-radius:15px;
+    box-sizing:border-box;
+}
+
+.galeria-item img{
+    display:block;
+    width:100%;
+    height:auto !important;
+    max-width:100%;
+    object-fit:contain !important;
+    border-radius:15px;
+}
 
 
 
