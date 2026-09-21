@@ -1557,6 +1557,20 @@ body.menus-movil-abiertos .menus-servicios-movil{
     object-position:center;
 }
 
+/* ---------- CALANDRA EN CELULAR ---------- */
+
+.galeria-calandra{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+
+.galeria-calandra .galeria-item{
+    width:100%;
+    max-width:600px;
+}
+
 /*----------------QUIENES SOMOS---------------*/
 
 /*BANNER INTERNOS*/
