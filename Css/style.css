@@ -1509,6 +1509,7 @@ body.menus-movil-abiertos .menus-servicios-movil{
     max-height:none;
     object-fit:contain;
 }
+
 /* ---------- GALERÍAS EN CELULAR ---------- */
 
 .galeria-trabajos{
@@ -1570,6 +1571,38 @@ body.menus-movil-abiertos .menus-servicios-movil{
 .galeria-calandra .galeria-item{
     width:100%;
     max-width:500px;
+}
+
+/* ---------- PRODUCTOS DESTACADOS EN CELULAR ---------- */
+
+.productos-destacados{
+    padding:60px 20px;
+}
+
+.productos-destacados h2{
+    font-size:32px;
+}
+
+.productos-subtitulo{
+    font-size:16px;
+    margin-bottom:30px;
+}
+
+.grid-productos{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.card-producto-imagen{
+    height:230px;
+}
+
+.card-producto-info{
+    padding:20px;
+}
+
+.card-producto-info h3{
+    font-size:19px;
 }
 
 /*----------------QUIENES SOMOS---------------*/
