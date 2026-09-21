@@ -1542,7 +1542,7 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 .galeria-item{
     width:100%;
-    height:300px;
+    max-width:100%;
     overflow:hidden;
     border-radius:15px;
     background:#fff;
@@ -1552,8 +1552,9 @@ body.menus-movil-abiertos .menus-servicios-movil{
 .galeria-item img{
     display:block;
     width:100%;
-    height:100%;
-    object-fit:cover;
+    height:auto;
+    max-width:100%;
+    object-fit:contain;
     object-position:center;
 }
 
@@ -1563,12 +1564,12 @@ body.menus-movil-abiertos .menus-servicios-movil{
     display:flex;
     flex-direction:column;
     align-items:center;
-    width:100%;
+    gap:25px;
 }
 
 .galeria-calandra .galeria-item{
     width:100%;
-    max-width:600px;
+    max-width:500px;
 }
 
 /*----------------QUIENES SOMOS---------------*/
