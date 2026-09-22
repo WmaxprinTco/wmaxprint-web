@@ -1577,15 +1577,22 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 .productos-destacados{
     padding:60px 20px;
+    text-align:center;
 }
 
 .productos-destacados h2{
+    width:100%;
+    margin:0 0 12px 0;
     font-size:32px;
+    line-height:1.2;
+    text-align:center !important;
 }
 
 .productos-subtitulo{
     font-size:16px;
-    margin-bottom:30px;
+    margin:0 auto 30px;
+    text-align:center;
+    line-height:1.6;
 }
 
 .grid-productos{
@@ -1604,6 +1611,8 @@ body.menus-movil-abiertos .menus-servicios-movil{
 .card-producto-info h3{
     font-size:19px;
 }
+
+
 
 /*----------------QUIENES SOMOS---------------*/
 
