@@ -826,6 +826,7 @@ footer{
 
 }
 
+
 /*----------RESPONSIVE TABLET----------*/
 
 @media(max-width:992px){
@@ -856,6 +857,7 @@ justify-content:center;
 
 }
 }
+
 
 /*----------RESPONSIVE CELULAR----------*/
 
@@ -1131,29 +1133,6 @@ body.menus-movil-abiertos .menus-servicios-movil{
     background:white;
 }
 
-
-/* ELEMENTOS DEL SUBMENÚ */
-
-.menus-servicios-movil .menu > ul > li.dropdown > .submenu > li{
-    width:100%;
-    margin:0;
-}
-
-
-.menus-servicios-movil .menu > ul > li.dropdown > .submenu > li > a{
-    display:block;
-
-    padding:12px 25px;
-
-    text-align:left;
-
-    font-size:14px;
-
-    color:#527D9B;
-
-    background: white;
-}
-
 /*---------- WTEXPRINT EN CELULAR ----------*/
 
 .menus-servicios-movil .menu-textiles{
@@ -1171,7 +1150,12 @@ body.menus-movil-abiertos .menus-servicios-movil{
     margin:0;
 }
 
-    /*---------- RESTO DE TU RESPONSIVE ----------*/
+
+/* =====================================================
+   INICIO Y ELEMENTOS GENERALES — CELULAR
+===================================================== */
+
+/* ---------- HERO Y SERVICIOS — CELULAR ---------- */
 
     .hero{
 
@@ -1219,13 +1203,6 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
     }
 
-
-    .footer-logo img{
-
-        width: 135px;
-
-    }
-
     .producto-imagen{
     display:flex;
     flex-direction:column;
@@ -1243,6 +1220,11 @@ body.menus-movil-abiertos .menus-servicios-movil{
     height:auto;
     object-fit:contain;
 }
+
+
+/* =====================================================
+   QUIÉNES SOMOS — CELULAR
+   ===================================================== */
 
 /*---------- NUESTRA HISTORIA EN CELULAR ----------*/
 
@@ -1400,6 +1382,10 @@ body.menus-movil-abiertos .menus-servicios-movil{
     word-break:normal;
 }
 
+/* =====================================================
+   CONTACTO — CELULAR
+   ===================================================== */
+
     .contacto-grid{
 
         grid-template-columns:1fr;
@@ -1412,6 +1398,10 @@ body.menus-movil-abiertos .menus-servicios-movil{
         grid-template-columns:1fr;
 
     }
+
+/* =====================================================
+   SERVICIOS — CELULAR
+   ===================================================== */
 
 /* ---------- SERVICIOS EN CELULAR ---------- */
 
@@ -1533,7 +1523,12 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 }
 
-    /*---------- FOOTER CELULAR ----------*/
+
+/* =====================================================
+   FOOTER — CELULAR
+   ===================================================== */
+
+/*---------- FOOTER CELULAR ----------*/
 
 .footer{
     padding:20px 15px;
@@ -1557,31 +1552,9 @@ body.menus-movil-abiertos .menus-servicios-movil{
     gap:10px;
 }
 
-/* ---------- GALERÍA EN MÓVIL ---------- */
-
-.galeria-trabajos{
-    padding:60px 20px;
-}
-
-.galeria-trabajos h2{
-    font-size:32px;
-}
-
-.galeria-descripcion{
-    font-size:16px;
-    margin-bottom:30px;
-}
-
-.grid-galeria{
-    grid-template-columns:1fr;
-    gap:20px;
-}
-
-.galeria-item img{
-    height:auto;
-    max-height:none;
-    object-fit:contain;
-}
+/* =====================================================
+   GALERÍAS — CELULAR
+   ===================================================== */
 
 /* ---------- GALERÍA EN CELULAR ---------- */
 
@@ -1646,6 +1619,10 @@ body.menus-movil-abiertos .menus-servicios-movil{
     width:100%;
     max-width:500px;
 }
+
+/* =====================================================
+   PRODUCTOS — CELULAR
+   ===================================================== */
 
 /* ---------- PRODUCTOS DESTACADOS EN CELULAR ---------- */
 
@@ -2124,59 +2101,6 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 }
 
-/*----------PÁGINAS DE SERVICIOS----------*/
-
-.servicio-detalle{
-
-    max-width:1200px;
-    margin:80px auto;
-    padding:0 8%;
-
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-
-}
-
-.servicio-imagen img{
-
-    width:100%;
-    border-radius:18px;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
-}
-
-.servicio-texto h2{
-
-    color:#0B3D91;
-    font-size:42px;
-    margin-bottom:20px;
-
-}
-
-.servicio-texto p{
-
-    font-size:18px;
-    line-height:32px;
-    margin-bottom:25px;
-
-}
-
-.servicio-texto ul{
-
-    margin-left:20px;
-    line-height:34px;
-    margin-bottom:35px;
-
-}
-
-.servicio-texto li{
-
-    margin-bottom:8px;
-
-}
-
 /*--PÁGINAS DE SERVICIOS--*/
 
 .servicio-detalle{
@@ -2231,6 +2155,8 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 }
 
+/* ---------- CONTENIDO Y OVERLAY DE BANNERS INTERNOS ---------- */
+
 .banner-interno{
 
     height:320px;
@@ -2240,7 +2166,9 @@ body.menus-movil-abiertos .menus-servicios-movil{
     position:relative;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
 }
@@ -2289,7 +2217,10 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 }
 
-/*---------- MENU FLOTANTE DERECHA ----------*/
+
+/* =====================================================
+   MENÚ FLOTANTE DE SERVICIOS — ESCRITORIO
+   ===================================================== */
 
 aside.menu-servicios {
     position: fixed !important;
@@ -2329,7 +2260,9 @@ aside.menu-servicios a:hover {
     color: #D62828;
 }
 
-/*---------- MENU SUPERIOR ----------*/
+/* =====================================================
+   MENÚ SUPERIOR — ESCRITORIO
+   ===================================================== */
 
 .menu-superior ul {
 
@@ -2361,7 +2294,10 @@ aside.menu-servicios a:hover {
     color: #D62828;
 }
 
-/*-----PAGINA DE PRODUCTO-----*/
+
+/* =====================================================
+   PÁGINAS DE PRODUCTO — GENERAL
+   ===================================================== */
 
 .producto{
 
@@ -2458,13 +2394,18 @@ aside.menu-servicios a:hover {
     transform: translateY(-3px);
 }
 
-/*---------- DESPLAZAMIENTO ----------*/
+
+/* =====================================================
+   DESPLAZAMIENTO HORIZONTAL — GENERAL
+   ===================================================== */
 
 html, body {
     overflow-x: hidden;
 }
 
-/*---------- ANCHO MÍNIMO SOLO EN COMPUTADOR ----------*/
+/* =====================================================
+   ANCHO MÍNIMO — ESCRITORIO
+   ===================================================== */
 
 @media (min-width: 769px) {
 
@@ -2474,21 +2415,28 @@ html, body {
 
 }
 
-/*---------- MENU HAMBURGUESA CELULAR ----------*/
+
+/* =====================================================
+   BOTÓN MENÚ HAMBURGUESA — GENERAL
+   ===================================================== */
 
 .boton-menu-movil {
 
     display: none;
 
 }
+
+
+
 @media (max-width: 768px) {
     aside.menu-servicios {
         display: none !important;
     }
 }
 
-
-/* ---------- GALERÍA DE TRABAJOS ---------- */
+/* =====================================================
+   GALERÍAS — GENERAL
+   ===================================================== */
 
 .galeria-trabajos{
     padding:80px 8%;
@@ -2537,7 +2485,10 @@ html, body {
     transform:scale(1.05);
 }
 
-/* ---------- PRODUCTOS DESTACADOS ---------- */
+
+/* =====================================================
+   PRODUCTOS — GENERAL
+   ===================================================== */
 
 .productos-destacados{
     padding:60px 20px;
@@ -2613,7 +2564,10 @@ html, body {
     font-size:14px;
 }
 
-/* ---------- WHATSAPP FLOTANTE ---------- */
+
+/* =====================================================
+   WHATSAPP FLOTANTE — GENERAL
+   ===================================================== */
 
 .whatsapp-flotante{
     position:fixed;
@@ -2638,7 +2592,6 @@ html, body {
     transform:scale(1.08);
     box-shadow:0 8px 20px rgba(0,0,0,.30);
 }
-
 
 
 /* =====================================================
