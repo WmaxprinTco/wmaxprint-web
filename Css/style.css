@@ -2593,6 +2593,21 @@ html, body {
     box-shadow:0 8px 20px rgba(0,0,0,.30);
 }
 
+/* =====================================================
+   AJUSTES DE TÍTULOS Y ESPACIADO — ESCRITORIO
+   ===================================================== */
+
+@media (min-width: 769px){
+
+    .servicio-detalle{
+        margin-bottom:20px;
+    }
+
+    .servicio-texto h2{
+        text-align:center;
+    }
+
+}
 
 /* =====================================================
    AJUSTES FINALES PARA CELULAR
