@@ -1559,10 +1559,9 @@ body.menus-movil-abiertos .menus-servicios-movil{
 /* ---------- GALERÍA EN CELULAR ---------- */
 
 .galeria-trabajos{
-    padding:20px 8%;
+    padding:80px 8%;
     background:#fff;
     text-align:center;
-}
 }
 
 .galeria-trabajos h2{
@@ -1663,7 +1662,6 @@ body.menus-movil-abiertos .menus-servicios-movil{
     font-size:19px;
 }
 }
-
 
 /*----------------QUIENES SOMOS---------------*/
 
@@ -2674,6 +2672,22 @@ html, body {
         max-width:100% !important;
         height:auto !important;
         object-fit:contain !important;
+    }
+
+}
+
+/* =====================================================
+   GALERÍA — ESCRITORIO
+   ===================================================== */
+
+@media (min-width:769px){
+
+    .galeria-trabajos .grid-galeria{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:25px;
+        max-width:1100px;
+        margin:0 auto;
     }
 
 }
