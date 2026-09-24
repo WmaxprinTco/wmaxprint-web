@@ -2676,18 +2676,3 @@ html, body {
 
 }
 
-/* =====================================================
-   GALERÍA — ESCRITORIO
-   ===================================================== */
-
-@media (min-width:769px){
-
-    .galeria-trabajos .grid-galeria{
-        display:grid;
-        grid-template-columns:repeat(3, 1fr);
-        gap:25px;
-        max-width:1100px;
-        margin:0 auto;
-    }
-
-}
