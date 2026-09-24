@@ -1559,10 +1559,10 @@ body.menus-movil-abiertos .menus-servicios-movil{
 /* ---------- GALERÍA EN CELULAR ---------- */
 
 .galeria-trabajos{
-    padding:50px 20px;
-    width:100%;
-    max-width:100%;
-    box-sizing:border-box;
+    padding:20px 8%;
+    background:#fff;
+    text-align:center;
+}
 }
 
 .galeria-trabajos h2{
