@@ -2566,3 +2566,78 @@ html, body {
     transform:scale(1.08);
     box-shadow:0 8px 20px rgba(0,0,0,.30);
 }
+
+
+
+/* =====================================================
+   AJUSTES FINALES PARA CELULAR
+   ===================================================== */
+
+@media (max-width: 768px){
+
+    /* ---------- ACERCAR PRODUCTOS AL SERVICIO ---------- */
+
+    .servicio-detalle{
+        margin-bottom:0 !important;
+        padding-bottom:0 !important;
+    }
+
+    .productos-destacados{
+        margin-top:-35px !important;
+        padding-top:0 !important;
+    }
+
+
+    /* ---------- GALERÍA: UNA IMAGEN POR FILA ---------- */
+
+    .galeria-trabajos .grid-galeria{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        grid-auto-flow:row !important;
+        width:100% !important;
+        max-width:600px !important;
+        margin:0 auto !important;
+        gap:25px !important;
+    }
+
+    .galeria-trabajos .galeria-item{
+        width:100% !important;
+        max-width:100% !important;
+        height:auto !important;
+        overflow:hidden !important;
+    }
+
+    .galeria-trabajos .galeria-item img{
+        display:block !important;
+        width:100% !important;
+        max-width:100% !important;
+        height:auto !important;
+        min-height:0 !important;
+        object-fit:contain !important;
+        object-position:center !important;
+    }
+
+
+    /* ---------- TARJETAS DE PRODUCTOS ---------- */
+
+    .productos-destacados .grid-productos{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+    }
+
+    .productos-destacados .card-producto-imagen{
+        width:100% !important;
+        height:auto !important;
+        min-height:0 !important;
+        overflow:hidden !important;
+    }
+
+    .productos-destacados .card-producto-imagen img{
+        display:block !important;
+        width:100% !important;
+        max-width:100% !important;
+        height:auto !important;
+        object-fit:contain !important;
+    }
+
+}
