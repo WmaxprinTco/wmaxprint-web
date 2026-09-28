@@ -2676,3 +2676,155 @@ html, body {
 
 }
 
+/* =====================================================
+   SLIDER PRINCIPAL — INICIO
+   ===================================================== */
+
+.slider-hero{
+    width:100%;
+    height:90vh;
+    min-height:600px;
+    position:relative;
+    overflow:hidden;
+    background:#111;
+}
+
+.slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .6s ease;
+}
+
+.slide.activo{
+    opacity:1;
+    visibility:visible;
+}
+
+.slide > img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.slide-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.slide-contenido{
+    position:absolute;
+    z-index:2;
+    top:50%;
+    left:8%;
+    transform:translateY(-50%);
+    max-width:700px;
+    color:white;
+}
+
+.slide-contenido h1{
+    font-size:60px;
+    line-height:1.1;
+    margin:0 0 20px;
+}
+
+.slide-contenido p{
+    font-size:22px;
+    line-height:1.5;
+    margin:0 0 25px;
+    max-width:700px;
+}
+
+.slide-contenido .boton{
+    display:inline-block;
+    background:#D62828;
+    color:white;
+    text-decoration:none;
+    padding:16px 35px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.slide-contenido .boton:hover{
+    background:#B51F1F;
+    transform:translateY(-3px);
+}
+
+.slide-contenido .btn-whatsapp{
+    margin-top:0;
+}
+
+
+/* ---------- FLECHAS ---------- */
+
+.slider-flecha{
+    position:absolute;
+    z-index:5;
+    top:50%;
+    transform:translateY(-50%);
+    
+    width:50px;
+    height:50px;
+    
+    border:none;
+    border-radius:50%;
+    
+    background:rgba(0,0,0,.45);
+    color:white;
+    
+    font-size:28px;
+    cursor:pointer;
+    
+    transition:.3s;
+}
+
+.slider-flecha:hover{
+    background:rgba(214,40,40,.9);
+}
+
+.slider-flecha.anterior{
+    left:25px;
+}
+
+.slider-flecha.siguiente{
+    right:25px;
+}
+
+
+/* ---------- INDICADORES ---------- */
+
+.slider-indicadores{
+    position:absolute;
+    z-index:5;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    
+    display:flex;
+    gap:10px;
+}
+
+.indicador{
+    width:12px;
+    height:12px;
+    padding:0;
+    
+    border:none;
+    border-radius:50%;
+    
+    background:rgba(255,255,255,.5);
+    cursor:pointer;
+    
+    transition:.3s;
+}
+
+.indicador.activo{
+    background:white;
+    transform:scale(1.2);
+}
