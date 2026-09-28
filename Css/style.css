@@ -2854,7 +2854,6 @@ html, body {
     right:25px;
 }
 
-
 /* ---------- INDICADORES ---------- */
 
 .slider-indicadores{
@@ -2885,4 +2884,64 @@ html, body {
 .indicador.activo{
     background:white;
     transform:scale(1.2);
+}
+
+
+/* =====================================================
+   SLIDER — AJUSTE EXCLUSIVO PARA CELULAR
+   ===================================================== */
+
+@media (max-width: 768px){
+
+    .slider-hero{
+        height: 520px !important;
+        min-height: 520px !important;
+    }
+
+    .slide-contenido{
+        top: 50% !important;
+        left: 8% !important;
+        right: 8% !important;
+        width: auto !important;
+        max-width: none !important;
+        transform: translateY(-50%) !important;
+        text-align: left !important;
+    }
+
+    .slide-contenido h1{
+        font-size: 30px !important;
+        line-height: 1.1 !important;
+        margin: 0 0 18px !important;
+        max-width: 100% !important;
+    }
+
+    .slide-contenido p{
+        font-size: 16px !important;
+        line-height: 1.45 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+
+    /* OCULTAR BOTONES EN CELULAR */
+    .slide-contenido .boton,
+    .slide-contenido .btn-whatsapp{
+        display: none !important;
+    }
+
+    /* OCULTAR FLECHAS EN CELULAR */
+    .slider-flecha{
+        display: none !important;
+    }
+
+    /* INDICADORES */
+    .slider-indicadores{
+        bottom: 15px !important;
+        gap: 8px !important;
+    }
+
+    .indicador{
+        width: 9px !important;
+        height: 9px !important;
+    }
+
 }
