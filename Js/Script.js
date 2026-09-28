@@ -196,3 +196,80 @@ if (menus.length > 0) {
     });
 
 }
+
+/* =====================================================
+   SLIDER PRINCIPAL — INICIO
+   ===================================================== */
+
+const slides = document.querySelectorAll(".slider-hero .slide");
+const flechaAnterior = document.querySelector(".slider-flecha.anterior");
+const flechaSiguiente = document.querySelector(".slider-flecha.siguiente");
+const indicadores = document.querySelectorAll(".slider-hero .indicador");
+
+let slideActual = 0;
+
+function mostrarSlide(numero) {
+
+    slides.forEach((slide, index) => {
+        slide.classList.toggle("activo", index === numero);
+    });
+
+    indicadores.forEach((indicador, index) => {
+        indicador.classList.toggle("activo", index === numero);
+    });
+
+    slideActual = numero;
+}
+
+
+function siguienteSlide() {
+
+    let siguiente = slideActual + 1;
+
+    if (siguiente >= slides.length) {
+        siguiente = 0;
+    }
+
+    mostrarSlide(siguiente);
+}
+
+
+function anteriorSlide() {
+
+    let anterior = slideActual - 1;
+
+    if (anterior < 0) {
+        anterior = slides.length - 1;
+    }
+
+    mostrarSlide(anterior);
+}
+
+
+/* FLECHAS */
+
+if (flechaSiguiente) {
+    flechaSiguiente.addEventListener("click", siguienteSlide);
+}
+
+if (flechaAnterior) {
+    flechaAnterior.addEventListener("click", anteriorSlide);
+}
+
+
+/* INDICADORES */
+
+indicadores.forEach((indicador, index) => {
+
+    indicador.addEventListener("click", () => {
+        mostrarSlide(index);
+    });
+
+});
+
+
+/* CAMBIO AUTOMÁTICO */
+
+setInterval(() => {
+    siguienteSlide();
+}, 5000);
