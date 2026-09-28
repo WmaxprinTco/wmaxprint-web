@@ -2696,12 +2696,14 @@ html, body {
     height:100%;
     opacity:0;
     visibility:hidden;
-    transition:opacity .6s ease;
+    transform:translateX(30px);
+    transition:opacity .7s ease, transform .7s ease;
 }
 
 .slide.activo{
     opacity:1;
     visibility:visible;
+    transform:translateX(0);
 }
 
 .slide > img{
