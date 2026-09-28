@@ -2956,3 +2956,24 @@ html, body {
     }
 
 }
+
+/* ---------- TÍTULOS DE PRODUCTOS EN PC ---------- */
+
+@media (min-width: 769px){
+
+    .productos-destacados h2{
+        width:100%;
+        text-align:center !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+
+    .productos-destacados .productos-subtitulo{
+        width:100%;
+        max-width:700px;
+        text-align:center !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+
+}
