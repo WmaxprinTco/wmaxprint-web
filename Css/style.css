@@ -2894,8 +2894,8 @@ html, body {
 @media (max-width: 768px){
 
     .slider-hero{
-        height: 520px !important;
-        min-height: 520px !important;
+        height: 400px !important;
+        min-height: 400px !important;
     }
 
     .slide-contenido{
@@ -2909,14 +2909,14 @@ html, body {
     }
 
     .slide-contenido h1{
-        font-size: 30px !important;
+        font-size: 26px !important;
         line-height: 1.1 !important;
         margin: 0 0 18px !important;
         max-width: 100% !important;
     }
 
     .slide-contenido p{
-        font-size: 16px !important;
+        font-size: 14px !important;
         line-height: 1.45 !important;
         margin: 0 !important;
         max-width: 100% !important;
