@@ -2945,3 +2945,14 @@ html, body {
     }
 
 }
+
+/* ---------- TÍTULOS DE PRODUCTOS EN PC ---------- */
+
+@media (min-width: 769px){
+
+    .producto-contenedor h1{
+        text-align:center !important;
+        width:100%;
+    }
+
+}
