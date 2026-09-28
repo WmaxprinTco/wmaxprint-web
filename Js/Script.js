@@ -201,75 +201,118 @@ if (menus.length > 0) {
    SLIDER PRINCIPAL — INICIO
    ===================================================== */
 
-const slides = document.querySelectorAll(".slider-hero .slide");
-const flechaAnterior = document.querySelector(".slider-flecha.anterior");
-const flechaSiguiente = document.querySelector(".slider-flecha.siguiente");
-const indicadores = document.querySelectorAll(".slider-hero .indicador");
+const sliderHero = document.querySelector(".slider-hero");
 
-let slideActual = 0;
+if (sliderHero) {
 
-function mostrarSlide(numero) {
+    const slidesHero = sliderHero.querySelectorAll(".slide");
+    const flechaAnteriorHero = sliderHero.querySelector(".slider-flecha.anterior");
+    const flechaSiguienteHero = sliderHero.querySelector(".slider-flecha.siguiente");
+    const indicadoresHero = sliderHero.querySelectorAll(".indicador");
 
-    slides.forEach((slide, index) => {
-        slide.classList.toggle("activo", index === numero);
-    });
-
-    indicadores.forEach((indicador, index) => {
-        indicador.classList.toggle("activo", index === numero);
-    });
-
-    slideActual = numero;
-}
+    let slideHeroActual = 0;
 
 
-function siguienteSlide() {
+    function cambiarSlideHero(numero) {
 
-    let siguiente = slideActual + 1;
+        slidesHero.forEach((slide, index) => {
 
-    if (siguiente >= slides.length) {
-        siguiente = 0;
+            slide.classList.toggle(
+                "activo",
+                index === numero
+            );
+
+        });
+
+
+        indicadoresHero.forEach((indicador, index) => {
+
+            indicador.classList.toggle(
+                "activo",
+                index === numero
+            );
+
+        });
+
+
+        slideHeroActual = numero;
+
     }
 
-    mostrarSlide(siguiente);
-}
 
+    function avanzarSlideHero() {
 
-function anteriorSlide() {
+        let nuevoSlide = slideHeroActual + 1;
 
-    let anterior = slideActual - 1;
+        if (nuevoSlide >= slidesHero.length) {
+            nuevoSlide = 0;
+        }
 
-    if (anterior < 0) {
-        anterior = slides.length - 1;
+        cambiarSlideHero(nuevoSlide);
+
     }
 
-    mostrarSlide(anterior);
-}
+
+    function retrocederSlideHero() {
+
+        let nuevoSlide = slideHeroActual - 1;
+
+        if (nuevoSlide < 0) {
+            nuevoSlide = slidesHero.length - 1;
+        }
+
+        cambiarSlideHero(nuevoSlide);
+
+    }
 
 
-/* FLECHAS */
+    /* FLECHA SIGUIENTE */
 
-if (flechaSiguiente) {
-    flechaSiguiente.addEventListener("click", siguienteSlide);
-}
+    if (flechaSiguienteHero) {
 
-if (flechaAnterior) {
-    flechaAnterior.addEventListener("click", anteriorSlide);
-}
+        flechaSiguienteHero.addEventListener(
+            "click",
+            avanzarSlideHero
+        );
+
+    }
 
 
-/* INDICADORES */
+    /* FLECHA ANTERIOR */
 
-indicadores.forEach((indicador, index) => {
+    if (flechaAnteriorHero) {
 
-    indicador.addEventListener("click", () => {
-        mostrarSlide(index);
+        flechaAnteriorHero.addEventListener(
+            "click",
+            retrocederSlideHero
+        );
+
+    }
+
+
+    /* INDICADORES */
+
+    indicadoresHero.forEach((indicador, index) => {
+
+        indicador.addEventListener("click", () => {
+
+            cambiarSlideHero(index);
+
+        });
+
     });
 
-});
 
+    /* CAMBIO AUTOMÁTICO */
 
-/* CAMBIO AUTOMÁTICO */
+    if (slidesHero.length > 1) {
 
-setInterval(() => {
-    siguienteSlide();
-}, 5000);
+        setInterval(() => {
+
+            avanzarSlideHero();
+
+        }, 5000);
+
+    }
+
+}
