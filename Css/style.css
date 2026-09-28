@@ -516,8 +516,8 @@ body{
 
     position: fixed;
     right: 30px;
-    top: 60%;
-    transform: translateY(-50%);
+    top: 420px;
+    transform: none;
 
     border-radius: 18px;
     padding: 30px;
