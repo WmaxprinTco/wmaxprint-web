@@ -1676,44 +1676,35 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
     .slide-contenido{
         top:50%;
-        left:7%;
-        right:7%;
+        left:8%;
+        right:8%;
         transform:translateY(-50%);
         max-width:none;
         text-align:left;
     }
 
     .slide-contenido h1{
-        font-size:38px;
-        line-height:1.05;
+        font-size:34px;
+        line-height:1.08;
         margin-bottom:15px;
     }
 
     .slide-contenido p{
-        font-size:17px;
-        line-height:1.4;
-        margin-bottom:20px;
+        font-size:16px;
+        line-height:1.45;
+        margin-bottom:0;
         max-width:100%;
     }
 
+    /* QUITAR BOTONES DE LOS SLIDES EN CELULAR */
     .slide-contenido .boton,
     .slide-contenido .btn-whatsapp{
-        font-size:16px;
-        padding:12px 22px;
+        display:none;
     }
 
+    /* QUITAR FLECHAS EN CELULAR */
     .slider-flecha{
-        width:38px;
-        height:38px;
-        font-size:20px;
-    }
-
-    .slider-flecha.anterior{
-        left:12px;
-    }
-
-    .slider-flecha.siguiente{
-        right:12px;
+        display:none;
     }
 
     .slider-indicadores{
