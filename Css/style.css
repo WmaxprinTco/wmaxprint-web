@@ -2826,7 +2826,7 @@ html, body {
 .slide:first-child .slide-contenido .btn-whatsapp{
     display:inline-block;
 
-    background:#D62828;
+    background:#25D366;
     color:white;
 
     text-decoration:none;
@@ -2841,7 +2841,7 @@ html, body {
 }
 
 .slide:first-child .slide-contenido .btn-whatsapp:hover{
-    background:#B51F1F;
+    background:#25D366;
     transform:translateY(-3px);
 }
 
