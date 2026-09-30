@@ -2739,22 +2739,17 @@ html, body {
 .slider-hero{
     width:100%;
     height:500px;
+    min-height:0;
     position:relative;
     overflow:hidden;
     background:#fff;
 }
-
-/* ---------- SLIDES ---------- */
 
 .slide{
     position:absolute;
     inset:0;
     width:100%;
     height:100%;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
 
     opacity:0;
     visibility:hidden;
@@ -2769,25 +2764,35 @@ html, body {
     transform:translateX(0);
 }
 
-/* ---------- IMAGEN ---------- */
+
+/* =====================================================
+   IMAGEN DEL SLIDE
+   ===================================================== */
 
 .slide > img{
     width:100%;
     height:100%;
     object-fit:cover;
     display:block;
-    
 }
 
-/* ---------- CAPA OSCURA ---------- */
 
-.slide-overlay{
-    display: none;
+/* =====================================================
+   SLIDE 1 — HERO PRINCIPAL
+   ===================================================== */
+
+/* Mantiene el efecto oscuro solamente en el primer slide */
+
+.slide:first-child .slide-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
 }
 
-/* ---------- CONTENIDO ---------- */
 
-.slide-contenido{
+/* Contenido solamente del primer slide */
+
+.slide:first-child .slide-contenido{
     position:absolute;
     z-index:2;
 
@@ -2796,24 +2801,29 @@ html, body {
 
     transform:translateY(-50%);
 
-    max-width:650px;
+    max-width:700px;
     color:white;
 }
 
-.slide-contenido h1{
+.slide:first-child .slide-contenido h1{
     font-size:52px;
     line-height:1.1;
-    margin:0 0 18px;
+    margin:0 0 20px;
 }
 
-.slide-contenido p{
+.slide:first-child .slide-contenido p{
     font-size:20px;
     line-height:1.5;
-    margin:0 0 22px;
+
+    margin:0 0 25px;
+
     max-width:650px;
 }
 
-.slide-contenido .boton{
+
+/* ---------- BOTÓN WHATSAPP DEL SLIDE 1 ---------- */
+
+.slide:first-child .slide-contenido .btn-whatsapp{
     display:inline-block;
 
     background:#D62828;
@@ -2822,6 +2832,7 @@ html, body {
     text-decoration:none;
 
     padding:14px 30px;
+
     border-radius:8px;
 
     font-weight:bold;
@@ -2829,17 +2840,44 @@ html, body {
     transition:.3s;
 }
 
-.slide-contenido .boton:hover{
+.slide:first-child .slide-contenido .btn-whatsapp:hover{
     background:#B51F1F;
     transform:translateY(-3px);
 }
 
-.slide-contenido .btn-whatsapp{
-    margin-top:0;
+
+/* =====================================================
+   SLIDES 2, 3, 4 Y 5 — BANNERS DISEÑADOS
+   ===================================================== */
+
+/* Quitar completamente el filtro oscuro */
+
+.slide:nth-child(n+2) .slide-overlay{
+    display:none;
 }
 
 
-/* ---------- FLECHAS ---------- */
+/* Quitar botones y textos que estaban encima */
+
+.slide:nth-child(n+2) .slide-contenido{
+    display:none;
+}
+
+
+/* Mostrar los banners respetando su composición */
+
+.slide:nth-child(n+2) > img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background:#fff;
+    display:block;
+}
+
+
+/* =====================================================
+   FLECHAS
+   ===================================================== */
 
 .slider-flecha{
     position:absolute;
@@ -2858,6 +2896,7 @@ html, body {
     color:white;
 
     font-size:23px;
+
     cursor:pointer;
 
     transition:.3s;
@@ -2876,7 +2915,9 @@ html, body {
 }
 
 
-/* ---------- INDICADORES ---------- */
+/* =====================================================
+   INDICADORES
+   ===================================================== */
 
 .slider-indicadores{
     position:absolute;
