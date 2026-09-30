@@ -2959,36 +2959,39 @@ html, body {
 
 @media (max-width: 768px){
 
+    /* ---------- TAMAÑO DEL SLIDER ---------- */
+
     .slider-hero{
         width:100%;
-        height:auto !important;
-        min-height:0 !important;
-        aspect-ratio:16 / 9;
-        background:#fff !important;
+        height:400px !important;
+        min-height:400px !important;
+        background:#E9ECEF !important;
     }
 
-    /* ---------- IMAGEN DEL SLIDE ---------- */
 
-    .slide > img{
+    /* =================================================
+       SLIDE 1 — FOTO NORMAL
+       ================================================= */
+
+    .slide:first-child > img{
         width:100% !important;
         height:100% !important;
-        object-fit:contain !important;
+        object-fit:cover !important;
         display:block;
-        background:#fff !important;
     }
 
-    /* ---------- CAPA SOBRE LA IMAGEN ---------- */
-
-    .slide-overlay{
-        background:rgba(0,0,0,.15) !important;
+    .slide:first-child .slide-overlay{
+        display:block !important;
+        background:rgba(0,0,0,.45) !important;
     }
 
-    /* ---------- CONTENIDO ---------- */
+    .slide:first-child .slide-contenido{
+        display:block !important;
 
-    .slide-contenido{
         top:50% !important;
         left:8% !important;
         right:8% !important;
+
         width:auto !important;
         max-width:none !important;
 
@@ -2997,43 +3000,81 @@ html, body {
         text-align:left !important;
     }
 
-    .slide-contenido h1{
+    .slide:first-child .slide-contenido h1{
         font-size:26px !important;
         line-height:1.1 !important;
         margin:0 0 18px !important;
         max-width:100% !important;
     }
 
-    .slide-contenido p{
+    .slide:first-child .slide-contenido p{
         font-size:14px !important;
         line-height:1.45 !important;
-        margin:0 !important;
+        margin:0 0 20px !important;
         max-width:100% !important;
     }
 
-    /* ---------- OCULTAR BOTONES EN CELULAR ---------- */
+    .slide:first-child .slide-contenido .btn-whatsapp{
+        display:inline-block !important;
+        padding:11px 20px !important;
+        font-size:13px !important;
+    }
 
-    .slide-contenido .boton,
-    .slide-contenido .btn-whatsapp{
+
+    /* =================================================
+       SLIDES 2, 3, 4 Y 5 — BANNERS DISEÑADOS
+       ================================================= */
+
+    .slide:nth-child(n+2) > img{
+        width:100% !important;
+        height:100% !important;
+        object-fit:cover !important;
+        display:block;
+        background:#E9ECEF !important;
+    }
+
+    .slide:nth-child(n+2) .slide-overlay{
         display:none !important;
     }
 
-    /* ---------- OCULTAR FLECHAS EN CELULAR ---------- */
+    .slide:nth-child(n+2) .slide-contenido{
+        display:none !important;
+    }
+
+
+    /* =================================================
+       FLECHAS
+       ================================================= */
 
     .slider-flecha{
         display:none !important;
     }
 
-    /* ---------- INDICADORES ---------- */
+
+    /* =================================================
+       INDICADORES
+       ================================================= */
 
     .slider-indicadores{
-        bottom:10px !important;
+        bottom:15px !important;
         gap:8px !important;
     }
 
     .indicador{
         width:9px !important;
         height:9px !important;
+    }
+
+}
+
+
+/* ---------- TÍTULOS DE PRODUCTOS EN PC ---------- */
+
+@media (min-width:769px){
+
+    .producto-contenedor h1{
+        text-align:center !important;
+        width:100%;
     }
 
 }
