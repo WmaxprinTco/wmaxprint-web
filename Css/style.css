@@ -2738,21 +2738,28 @@ html, body {
 
 .slider-hero{
     width:100%;
-    height:65vh;
-    min-height:480px;
+    height:500px;
     position:relative;
     overflow:hidden;
-    background:#111;
+    background:#fff;
 }
+
+/* ---------- SLIDES ---------- */
 
 .slide{
     position:absolute;
     inset:0;
     width:100%;
     height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
     opacity:0;
     visibility:hidden;
     transform:translateX(30px);
+
     transition:opacity .7s ease, transform .7s ease;
 }
 
@@ -2762,50 +2769,66 @@ html, body {
     transform:translateX(0);
 }
 
+/* ---------- IMAGEN ---------- */
+
 .slide > img{
     width:100%;
     height:100%;
-    object-fit:cover;
+    object-fit:contain;
     display:block;
+    background:#fff;
 }
+
+/* ---------- CAPA OSCURA ---------- */
 
 .slide-overlay{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.45);
+    background:rgba(0,0,0,.20);
+    pointer-events:none;
 }
+
+/* ---------- CONTENIDO ---------- */
 
 .slide-contenido{
     position:absolute;
     z-index:2;
+
     top:50%;
     left:8%;
+
     transform:translateY(-50%);
-    max-width:700px;
+
+    max-width:650px;
     color:white;
 }
 
 .slide-contenido h1{
-    font-size:60px;
+    font-size:52px;
     line-height:1.1;
-    margin:0 0 20px;
+    margin:0 0 18px;
 }
 
 .slide-contenido p{
-    font-size:22px;
+    font-size:20px;
     line-height:1.5;
-    margin:0 0 25px;
-    max-width:700px;
+    margin:0 0 22px;
+    max-width:650px;
 }
 
 .slide-contenido .boton{
     display:inline-block;
+
     background:#D62828;
     color:white;
+
     text-decoration:none;
-    padding:16px 35px;
+
+    padding:14px 30px;
     border-radius:8px;
+
     font-weight:bold;
+
     transition:.3s;
 }
 
@@ -2824,21 +2847,22 @@ html, body {
 .slider-flecha{
     position:absolute;
     z-index:5;
+
     top:50%;
     transform:translateY(-50%);
-    
+
     width:42px;
     height:42px;
-    
+
     border:none;
     border-radius:50%;
-    
-    background:rgba(0,0,0,.45);
+
+    background:rgba(0,0,0,.40);
     color:white;
-    
+
     font-size:23px;
     cursor:pointer;
-    
+
     transition:.3s;
 }
 
@@ -2854,30 +2878,35 @@ html, body {
     right:25px;
 }
 
+
 /* ---------- INDICADORES ---------- */
 
 .slider-indicadores{
     position:absolute;
     z-index:5;
-    bottom:25px;
+
+    bottom:20px;
     left:50%;
+
     transform:translateX(-50%);
-    
+
     display:flex;
     gap:10px;
 }
 
 .indicador{
-    width:12px;
-    height:12px;
+    width:11px;
+    height:11px;
+
     padding:0;
-    
+
     border:none;
     border-radius:50%;
-    
-    background:rgba(255,255,255,.5);
+
+    background:rgba(255,255,255,.6);
+
     cursor:pointer;
-    
+
     transition:.3s;
 }
 
@@ -2885,7 +2914,6 @@ html, body {
     background:white;
     transform:scale(1.2);
 }
-
 
 /* =====================================================
    SLIDER — AJUSTE EXCLUSIVO PARA CELULAR
