@@ -2922,58 +2922,95 @@ html, body {
 @media (max-width: 768px){
 
     .slider-hero{
-        height: 400px !important;
-        min-height: 400px !important;
+        width:100%;
+        height:auto !important;
+        min-height:0 !important;
+        aspect-ratio:16 / 9;
+        background:#fff !important;
     }
 
+    /* ---------- IMAGEN DEL SLIDE ---------- */
+
+    .slide > img{
+        width:100% !important;
+        height:100% !important;
+        object-fit:contain !important;
+        display:block;
+        background:#fff !important;
+    }
+
+    /* ---------- CAPA SOBRE LA IMAGEN ---------- */
+
+    .slide-overlay{
+        background:rgba(0,0,0,.15) !important;
+    }
+
+    /* ---------- CONTENIDO ---------- */
+
     .slide-contenido{
-        top: 50% !important;
-        left: 8% !important;
-        right: 8% !important;
-        width: auto !important;
-        max-width: none !important;
-        transform: translateY(-50%) !important;
-        text-align: left !important;
+        top:50% !important;
+        left:8% !important;
+        right:8% !important;
+        width:auto !important;
+        max-width:none !important;
+
+        transform:translateY(-50%) !important;
+
+        text-align:left !important;
     }
 
     .slide-contenido h1{
-        font-size: 26px !important;
-        line-height: 1.1 !important;
-        margin: 0 0 18px !important;
-        max-width: 100% !important;
+        font-size:26px !important;
+        line-height:1.1 !important;
+        margin:0 0 18px !important;
+        max-width:100% !important;
     }
 
     .slide-contenido p{
-        font-size: 14px !important;
-        line-height: 1.45 !important;
-        margin: 0 !important;
-        max-width: 100% !important;
+        font-size:14px !important;
+        line-height:1.45 !important;
+        margin:0 !important;
+        max-width:100% !important;
     }
 
-    /* OCULTAR BOTONES EN CELULAR */
+    /* ---------- OCULTAR BOTONES EN CELULAR ---------- */
+
     .slide-contenido .boton,
     .slide-contenido .btn-whatsapp{
-        display: none !important;
+        display:none !important;
     }
 
-    /* OCULTAR FLECHAS EN CELULAR */
+    /* ---------- OCULTAR FLECHAS EN CELULAR ---------- */
+
     .slider-flecha{
-        display: none !important;
+        display:none !important;
     }
 
-    /* INDICADORES */
+    /* ---------- INDICADORES ---------- */
+
     .slider-indicadores{
-        bottom: 15px !important;
-        gap: 8px !important;
+        bottom:10px !important;
+        gap:8px !important;
     }
 
     .indicador{
-        width: 9px !important;
-        height: 9px !important;
+        width:9px !important;
+        height:9px !important;
     }
 
 }
 
+
+/* ---------- TÍTULOS DE PRODUCTOS EN PC ---------- */
+
+@media (min-width:769px){
+
+    .producto-contenedor h1{
+        text-align:center !important;
+        width:100%;
+    }
+
+}
 /* ---------- TÍTULOS DE PRODUCTOS EN PC ---------- */
 
 @media (min-width: 769px){
