@@ -843,8 +843,8 @@ footer{
 @media (min-width: 769px){
 
     .footer-logo img{
-        width: 140px;
-        max-width: 140px;
+        width: 90px;
+        max-width: 90px;
         height: auto;
     }
 
