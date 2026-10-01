@@ -838,13 +838,13 @@ footer{
 
 }
 
-/*---------- LOGO FOOTER NORMAL - INICIO / QUIENES SOMOS / CONTACTO ----------*/
+/*---------- LOGO FOOTER NORMAL PC- INICIO / QUIENES SOMOS / CONTACTO ----------*/
 
 @media (min-width: 769px){
 
     .footer-logo img{
-        width: 90px;
-        max-width: 90px;
+        width: 75px;
+        max-width: 75px;
         height: auto;
     }
 
@@ -1546,12 +1546,11 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 }
 
-
 /* =====================================================
    FOOTER — CELULAR
    ===================================================== */
 
-/*---------- FOOTER CELULAR ----------*/
+/*---------- FOOTER GENERAL ----------*/
 
 .footer{
     padding:20px 15px;
@@ -1561,18 +1560,38 @@ body.menus-movil-abiertos .menus-servicios-movil{
     gap:12px;
 }
 
-.footer-logo img{
-    max-width:120px;
-    width:120px;
-    height:auto;
-}
-
 .footer-logo{
     margin-bottom:5px;
 }
 
 .footer-redes{
     gap:10px;
+}
+
+
+/*---------- LOGO FOOTER EN PC ----------*/
+
+@media (min-width: 769px){
+
+    .footer-logo img{
+        width:80px;
+        max-width:80px;
+        height:auto;
+    }
+
+}
+
+
+/*---------- LOGO FOOTER EN CELULAR ----------*/
+
+@media (max-width: 768px){
+
+    .footer-logo img{
+        width:120px;
+        max-width:120px;
+        height:auto;
+    }
+
 }
 
 
