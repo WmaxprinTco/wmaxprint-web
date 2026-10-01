@@ -2743,6 +2743,18 @@ html, body {
 
 }
 
+/* ---------- TARJETAS DE PRODUCTOS EN COMPUTADOR ---------- */
+
+@media (min-width: 769px){
+
+    .productos-destacados .grid-productos{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+}
+
 /* =====================================================
    SLIDER PRINCIPAL — INICIO
    ===================================================== */
