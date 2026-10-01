@@ -3091,3 +3091,15 @@ html, body {
     }
 
 }
+
+
+
+@media (min-width: 769px) {
+
+    .footer-logo img {
+        width: 250px !important;
+        max-width: 250px !important;
+        height: auto !important;
+    }
+
+}
