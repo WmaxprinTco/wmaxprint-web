@@ -2874,47 +2874,6 @@ html, body {
     display:block;
 }
 
-
-/* =====================================================
-   FLECHAS
-   ===================================================== */
-
-.slider-flecha{
-    position:absolute;
-    z-index:5;
-
-    top:50%;
-    transform:translateY(-50%);
-
-    width:42px;
-    height:42px;
-
-    border:none;
-    border-radius:50%;
-
-    background:rgba(0,0,0,.40);
-    color:white;
-
-    font-size:23px;
-
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-.slider-flecha:hover{
-    background:rgba(214,40,40,.9);
-}
-
-.slider-flecha.anterior{
-    left:25px;
-}
-
-.slider-flecha.siguiente{
-    right:25px;
-}
-
-
 /* =====================================================
    INDICADORES
    ===================================================== */
