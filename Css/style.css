@@ -2967,7 +2967,7 @@ html, body {
         width:100%;
         height:400px !important;
         min-height:400px !important;
-        background:#E9ECEF !important;
+        background:#102845 !important;
     }
 
 
@@ -3077,28 +3077,7 @@ html, body {
     }
 }
 
-/* ---------- TÍTULOS DE PRODUCTOS EN PC ---------- */
 
-@media (min-width:769px){
-
-    .producto-contenedor h1{
-        text-align:center !important;
-        width:100%;
-    }
-
-}
-
-
-/* ---------- TÍTULOS DE PRODUCTOS EN PC ---------- */
-
-@media (min-width:769px){
-
-    .producto-contenedor h1{
-        text-align:center !important;
-        width:100%;
-    }
-
-}
 /* ---------- TÍTULOS DE PRODUCTOS EN PC ---------- */
 
 @media (min-width: 769px){
