@@ -2755,7 +2755,7 @@ html, body {
     visibility:hidden;
     transform:translateX(30px);
 
-    transition:opacity .7s ease, transform .7s ease;
+    transition:opacity .5s ease, transform .5s ease;
 }
 
 .slide.activo{
