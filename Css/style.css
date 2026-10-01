@@ -1568,32 +1568,13 @@ body.menus-movil-abiertos .menus-servicios-movil{
     gap:10px;
 }
 
-
-/*---------- LOGO FOOTER EN PC ----------*/
-
-@media (min-width: 769px){
-
-    .footer-logo img{
-        width:80px;
-        max-width:80px;
-        height:auto;
-    }
-
-}
-
-
 /*---------- LOGO FOOTER EN CELULAR ----------*/
-
-@media (max-width: 768px){
 
     .footer-logo img{
         width:120px;
         max-width:120px;
         height:auto;
     }
-
-}
-
 
 /* =====================================================
    GALERÍAS — CELULAR
