@@ -1552,6 +1552,17 @@ body.menus-movil-abiertos .menus-servicios-movil{
     gap:10px;
 }
 
+/*---------- FOOTER COMPUTADOR ----------*/
+
+@media (min-width: 769px){
+
+    .footer-logo img{
+        width: 250px;
+        max-width: 250px;
+        height: auto;
+    }
+
+}
 /* =====================================================
    GALERÍAS — CELULAR
    ===================================================== */
