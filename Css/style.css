@@ -2954,12 +2954,14 @@ html, body {
 }
 
 /* =====================================================
-   SLIDER — AJUSTE EXCLUSIVO PARA CELULAR
+   SLIDER — CELULAR
    ===================================================== */
 
 @media (max-width: 768px){
 
-    /* ---------- TAMAÑO DEL SLIDER ---------- */
+    /* =================================================
+       CONTENEDOR GENERAL
+       ================================================= */
 
     .slider-hero{
         width:100%;
@@ -2970,13 +2972,14 @@ html, body {
 
 
     /* =================================================
-       SLIDE 1 — FOTO NORMAL
+       SLIDE 1 — FOTO PRINCIPAL
        ================================================= */
 
     .slide:first-child > img{
         width:100% !important;
         height:100% !important;
         object-fit:cover !important;
+        object-position:center center !important;
         display:block;
     }
 
@@ -2996,7 +2999,6 @@ html, body {
         max-width:none !important;
 
         transform:translateY(-50%) !important;
-
         text-align:left !important;
     }
 
@@ -3004,14 +3006,12 @@ html, body {
         font-size:26px !important;
         line-height:1.1 !important;
         margin:0 0 18px !important;
-        max-width:100% !important;
     }
 
     .slide:first-child .slide-contenido p{
         font-size:14px !important;
         line-height:1.45 !important;
         margin:0 0 20px !important;
-        max-width:100% !important;
     }
 
     .slide:first-child .slide-contenido .btn-whatsapp{
@@ -3022,13 +3022,24 @@ html, body {
 
 
     /* =================================================
-       SLIDES 2, 3, 4 Y 5 — BANNERS DISEÑADOS
+       SLIDES DISEÑADOS — DTF / PAPELERÍA / GRAN FORMATO
        ================================================= */
+
+    .slide:nth-child(n+2){
+        height:210px !important;
+        top:50% !important;
+        transform:translateY(-50%) translateX(30px);
+    }
+
+    .slide:nth-child(n+2).activo{
+        transform:translateY(-50%) translateX(0);
+    }
 
     .slide:nth-child(n+2) > img{
         width:100% !important;
         height:100% !important;
-        object-fit:cover !important;
+        object-fit:contain !important;
+        object-position:center center !important;
         display:block;
         background:#E9ECEF !important;
     }
@@ -3064,9 +3075,7 @@ html, body {
         width:9px !important;
         height:9px !important;
     }
-
 }
-
 
 /* ---------- TÍTULOS DE PRODUCTOS EN PC ---------- */
 
