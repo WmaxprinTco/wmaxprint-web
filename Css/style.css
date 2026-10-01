@@ -826,33 +826,9 @@ footer{
 
 }
 
-/*---------- LOGO FOOTER GRANDE - SOLO SERVICIOS ----------*/
-
-@media (min-width: 769px){
-
-    .footer-logo-grande img{
-        width: 250px;
-        max-width: 250px;
-        height: auto;
-    }
-
-}
-
-/*---------- LOGO FOOTER NORMAL PC- INICIO / QUIENES SOMOS / CONTACTO ----------*/
-
-@media (min-width: 769px){
-
-    .footer-logo img{
-        width: 75px;
-        max-width: 75px;
-        height: auto;
-    }
-
-}
-
 /*----------RESPONSIVE TABLET----------*/
 
-@media(max-width:992px){
+@media (max-width:992px){
 
 .hero-contenido{
 
@@ -881,6 +857,48 @@ justify-content:center;
 }
 }
 
+/* =====================================================
+   LOGOS DEL FOOTER
+===================================================== */
+
+/* ---------- LOGO NORMAL ---------- */
+
+.footer-logo img{
+    width:75px;
+    max-width:75px;
+    height:auto;
+}
+
+/* ---------- LOGO GRANDE — SERVICIOS ---------- */
+
+.footer-logo-grande img{
+    width:250px;
+    max-width:250px;
+    height:auto;
+}
+
+
+/* =====================================================
+   LOGOS DEL FOOTER — CELULAR
+===================================================== */
+
+@media (max-width:768px){
+
+    /* Logo normal — W */
+    .footer-logo:not(.footer-logo-grande) img{
+        width:120px;
+        max-width:120px;
+        height:auto;
+    }
+
+    /* Logo completo — páginas de servicios */
+    .footer-logo-grande img{
+        width:180px;
+        max-width:180px;
+        height:auto;
+    }
+
+}
 
 /*----------RESPONSIVE CELULAR----------*/
 
