@@ -311,7 +311,7 @@ if (sliderHero) {
 
             avanzarSlideHero();
 
-        }, 6000);
+        }, 3500);
 
     }
 
