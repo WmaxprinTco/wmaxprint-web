@@ -2809,6 +2809,17 @@ html, body {
     box-shadow:0 8px 20px rgba(0,0,0,.30);
 }
 
+/*---------- WHATSAPP — PC A LA IZQUIERDA ----------*/
+
+@media (min-width:769px){
+
+    .whatsapp-flotante{
+        left:20px;
+        right:auto;
+    }
+
+}
+
 /* =====================================================
    AJUSTES DE TÍTULOS Y ESPACIADO — ESCRITORIO
    ===================================================== */
