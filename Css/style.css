@@ -3384,3 +3384,37 @@ html, body {
     }
 
 }
+
+ /* =====================================================
+    GALERÍA INICIO — MÁS GRANDE SOLO EN CELULAR
+    ===================================================== */
+
+@media (max-width: 768px){
+
+    .galeria-trabajos{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .galeria-trabajos .grid-galeria{
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    .galeria-trabajos .galeria-item{
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .galeria-trabajos .galeria-item img{
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+    }
+
+}
