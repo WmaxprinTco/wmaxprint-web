@@ -2816,6 +2816,9 @@ html, body {
     .whatsapp-flotante{
         left:20px;
         right:auto;
+        width: 64px;
+        height: 64px;;
+        font-size: 32px;
     }
 
 }
