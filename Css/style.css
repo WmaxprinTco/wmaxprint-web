@@ -3365,3 +3365,22 @@ html, body {
     }
 
 }
+
+/* =====================================================
+   GALERÍA INICIO — IMÁGENES MÁS GRANDES EN CELULAR
+   ===================================================== */
+
+@media (max-width:768px){
+
+    .galeria-trabajos .galeria-item{
+        width:100% !important;
+        max-width:none !important;
+    }
+
+    .galeria-trabajos .galeria-item img{
+        width:100% !important;
+        max-width:none !important;
+        height:auto !important;
+    }
+
+}
