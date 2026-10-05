@@ -1838,18 +1838,19 @@ body.menus-movil-abiertos .menus-servicios-movil{
     font-size:19px;
 }
 }
+ /*---------- TITULO PRODUCTOS — CELULAR ----------*/
 
-/*---------- TITULO DE PRODUCTOS ----------*/
+@media (max-width:768px){
 
-.productos-destacados h2{
-    font-size: 38px;
-    margin-bottom: 15px;
-}
+    .productos-destacados h2{
+        font-size: 30px;
+    }
 
-.productos-destacados .productos-subtitulo{
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 35px;
+    .productos-destacados .productos-subtitulo{
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
 }
 
 /* =====================================================
@@ -2792,6 +2793,18 @@ html, body {
     font-size:14px;
 }
 
+/*---------- TITULO DE PRODUCTOS ----------*/
+
+.productos-destacados h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.productos-destacados .productos-subtitulo{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
 
 /* =====================================================
    WHATSAPP FLOTANTE — GENERAL
