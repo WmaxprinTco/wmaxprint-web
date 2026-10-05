@@ -3302,3 +3302,39 @@ html, body {
     }
 
 }
+
+/* =====================================================
+   FOOTER — CELULAR
+   ===================================================== */
+
+@media (max-width: 768px){
+
+    .footer-contenedor{
+        display:grid;
+        grid-template-columns:1fr !important;
+        gap:20px !important;
+        text-align:center !important;
+        align-items:center !important;
+    }
+
+    .footer-logo{
+        justify-content:center !important;
+        width:100%;
+    }
+
+    .footer-info{
+        text-align:center !important;
+        width:100%;
+    }
+
+    .footer-redes{
+        justify-content:center !important;
+        width:100%;
+    }
+
+    .footer-nota{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+}
