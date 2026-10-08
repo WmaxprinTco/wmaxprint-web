@@ -170,3 +170,42 @@ inputBuscador.addEventListener("keydown", function(event) {
     }
 
 });
+
+// MOSTRAR RESULTADOS EN resultados.html
+
+const listaResultados = document.getElementById("lista-resultados");
+const tituloResultados = document.getElementById("titulo-resultados");
+
+if (listaResultados && tituloResultados) {
+
+    const resultadosGuardados =
+        JSON.parse(localStorage.getItem("resultadosBusqueda")) || [];
+
+    const textoBusqueda =
+        localStorage.getItem("textoBusqueda") || "";
+
+    tituloResultados.textContent =
+        `Resultados para: "${textoBusqueda}"`;
+
+
+    resultadosGuardados.forEach(producto => {
+
+        const resultado = document.createElement("div");
+
+        resultado.classList.add("resultado-item");
+
+        resultado.innerHTML = `
+
+            <h2>${producto.nombre}</h2>
+
+            <a href="${producto.pagina}">
+                Ver producto
+            </a>
+
+        `;
+
+        listaResultados.appendChild(resultado);
+
+    });
+
+}
