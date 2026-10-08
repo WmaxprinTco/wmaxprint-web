@@ -36,6 +36,84 @@ body{
 
 }
 
+/*---------- BARRA DE BÚSQUEDA ----------*/
+
+.busqueda{
+
+    flex: 1;
+
+    max-width: 400px;
+    min-width: 250px;
+
+    display: flex;
+    align-items: center;
+
+    background: white;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    border: 2px solid transparent;
+
+    transition: .3s;
+}
+
+.busqueda:focus-within{
+
+    border-color: #D62828;
+
+    box-shadow: 0 0 0 3px rgba(214,40,40,.15);
+}
+
+.busqueda input{
+
+    flex: 1;
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 13px 18px;
+
+    font-size: 16px;
+
+    color: #0b2239;
+}
+
+.busqueda input::placeholder{
+
+    color: #777;
+}
+
+.busqueda button{
+
+    width: 50px;
+
+    height: 45px;
+
+    border: none;
+
+    background: #D62828;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.busqueda button:hover{
+
+    background: #B51F1F;
+}
+
 /*---------- MENU SUPERIOR ----------*/
 
 .menu-superior {
