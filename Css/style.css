@@ -3608,3 +3608,147 @@ html, body {
     }
 
 }
+
+/* =====================================================
+   PÁGINA DE RESULTADOS DEL BUSCADOR
+===================================================== */
+
+.resultados{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 60px 50px 80px;
+}
+
+/* ENCABEZADO */
+
+.encabezado-resultados{
+    margin-bottom: 40px;
+}
+
+.encabezado-resultados h1{
+    margin: 0 0 10px;
+    color: #0b2239;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.encabezado-resultados p{
+    margin: 0;
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* CUADRÍCULA */
+
+.grid-resultados{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* TARJETA */
+
+.resultado-item{
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: .3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.10);
+}
+
+
+/* IMAGEN */
+
+.resultado-imagen{
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background: #f7f7f7;
+    padding: 20px;
+}
+
+
+/* INFORMACIÓN */
+
+.resultado-info{
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.resultado-info h2{
+    margin: 0 0 18px;
+    color: #0b2239;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+
+/* BOTÓN */
+
+.resultado-boton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    padding: 11px 20px;
+    background: #0b2239;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: .3s ease;
+}
+
+.resultado-boton:hover{
+    background: #D62828;
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 768px){
+
+    .resultados{
+        padding: 40px 20px 60px;
+    }
+
+    .encabezado-resultados{
+        margin-bottom: 30px;
+    }
+
+    .encabezado-resultados h1{
+        font-size: 25px;
+    }
+
+    .encabezado-resultados p{
+        font-size: 14px;
+    }
+
+    .grid-resultados{
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .resultado-imagen{
+        height: 220px;
+    }
+
+}

@@ -175,6 +175,7 @@ inputBuscador.addEventListener("keydown", function(event) {
 
 const listaResultados = document.getElementById("lista-resultados");
 const tituloResultados = document.getElementById("titulo-resultados");
+const cantidadResultados = document.getElementById("cantidad-resultados");
 
 if (listaResultados && tituloResultados) {
 
@@ -187,6 +188,12 @@ if (listaResultados && tituloResultados) {
     tituloResultados.textContent =
         `Resultados para: "${textoBusqueda}"`;
 
+    if (cantidadResultados) {
+
+        cantidadResultados.textContent =
+            `${resultadosGuardados.length} producto${resultadosGuardados.length !== 1 ? "s" : ""} encontrado${resultadosGuardados.length !== 1 ? "s" : ""}`;
+
+    }
 
     resultadosGuardados.forEach(producto => {
 
@@ -196,11 +203,23 @@ if (listaResultados && tituloResultados) {
 
         resultado.innerHTML = `
 
-            <h2>${producto.nombre}</h2>
+            <img 
+                src="${producto.imagen}" 
+                alt="${producto.nombre}"
+                class="resultado-imagen"
+            >
 
-            <a href="${producto.pagina}">
-                Ver producto
-            </a>
+            <div class="resultado-info">
+
+                <h2>${producto.nombre}</h2>
+
+                <a 
+                    href="${producto.pagina}"
+                    class="resultado-boton">
+                    Ver producto
+                </a>
+
+            </div>
 
         `;
 
