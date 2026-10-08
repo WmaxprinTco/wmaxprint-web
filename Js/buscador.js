@@ -39,7 +39,7 @@ const productos = [
         imagen: "Img/Imagenproductos/aranagrisexterior.png"
     },
 
-    // =========================
+// =========================
 // NUESTROS SERVICIOS
 // =========================
 
@@ -78,7 +78,6 @@ const productos = [
     palabras: "portapendones porta pendones pendones estructuras publicidad",
     pagina: "portapendones.html"
 },
-
 
 
     // =========================
@@ -153,7 +152,8 @@ const productos = [
     {
         nombre: "Backing Araña",
         palabras: "backing arana araña publicidad estructura",
-        pagina: "backing-arana.html"
+        pagina: "backing-arana.html",
+        imagen: "Img/Imagenproductos/backingarana.png"
     },
 
 
