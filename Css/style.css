@@ -3507,15 +3507,19 @@ html, body {
 
         display: flex;
 
-        flex-wrap: wrap;
+        flex-direction: column;
 
-        gap: 15px;
+        align-items: stretch;
+
+        gap: 12px;
 
     }
 
+    /* LOGO */
+
     .logo{
 
-        width: auto;
+        align-self: center;
 
     }
 
@@ -3525,9 +3529,45 @@ html, body {
 
     }
 
+    /* MENÚ SUPERIOR */
+
+    .menu-superior{
+
+        width: 100%;
+
+        margin-left: 0;
+
+        display: block;
+
+    }
+
+    .menu-superior ul{
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 15px;
+
+    }
+
+    .menu-superior a{
+
+        font-size: 14px;
+
+        padding: 5px 2px;
+
+    }
+
+    /* BÚSQUEDA */
+
     .busqueda{
 
-        order: 2;
+        order: 3;
 
         width: 100%;
 
@@ -3536,6 +3576,8 @@ html, body {
         min-width: 0;
 
         flex: none;
+
+        margin: 0;
 
     }
 
@@ -3553,19 +3595,15 @@ html, body {
 
         height: 44px;
 
-    }
-
-    .menu-superior{
-
-        display: none;
+        flex-shrink: 0;
 
     }
+
+    /* REDES */
 
     .redes{
 
-        margin-left: auto;
-
-        gap: 15px;
+        display: none;
 
     }
 
