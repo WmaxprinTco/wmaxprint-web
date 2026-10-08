@@ -22,7 +22,7 @@ const productos = [
     nombre: "Araña Importada de Lujo",
     palabras: "arana araña importada lujo lujosa estructura publicidad pendon pendones",
     pagina: "arana-importadadelujo.html",
-    imagen: "Img/Imagenproductos/aranaimportada.png"
+    imagen: "Img/Imagenproductos/aranalujo.png"
 },
 
     {
