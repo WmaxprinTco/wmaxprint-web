@@ -3496,3 +3496,77 @@ html, body {
     }
 
 }
+
+/*---------- BÚSQUEDA EN CELULAR ----------*/
+
+@media (max-width: 768px){
+
+    .top-header{
+
+        padding: 15px 20px;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+    }
+
+    .logo{
+
+        width: auto;
+
+    }
+
+    .logo img{
+
+        width: 170px;
+
+    }
+
+    .busqueda{
+
+        order: 2;
+
+        width: 100%;
+
+        max-width: none;
+
+        min-width: 0;
+
+        flex: none;
+
+    }
+
+    .busqueda input{
+
+        font-size: 15px;
+
+        padding: 12px 16px;
+
+    }
+
+    .busqueda button{
+
+        width: 48px;
+
+        height: 44px;
+
+    }
+
+    .menu-superior{
+
+        display: none;
+
+    }
+
+    .redes{
+
+        margin-left: auto;
+
+        gap: 15px;
+
+    }
+
+}
