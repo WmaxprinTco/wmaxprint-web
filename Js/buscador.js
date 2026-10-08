@@ -306,43 +306,43 @@ const productos = [
 
     {
         nombre: "Banderín Gota",
-        palabras: "banderin banderín gota bandera publicidad",
+        palabras: "banderin banderí banderines gota bandera publicidad",
         pagina: "banderin-gota.html"
     },
 
     {
         nombre: "Banderín Pluma",
-        palabras: "banderin banderín pluma bandera publicidad",
+        palabras: "banderin banderín banderines pluma bandera publicidad",
         pagina: "banderin-pluma.html"
     },
 
     {
         nombre: "Banderín Rectangular",
-        palabras: "banderin banderín rectangular bandera publicidad",
+        palabras: "banderin banderín banderines rectangular bandera publicidad",
         pagina: "banderin-rectangular.html"
     },
 
     {
         nombre: "Banderas Publicitarias",
-        palabras: "bandera banderas publicitarias banderin banderín publicidad",
+        palabras: "bandera banderas banderines publicitarias banderin banderín publicidad",
         pagina: "banderas-publicitarias.html"
     },
 
     {
         nombre: "Base para Interiores",
-        palabras: "base interiores base para interiores publicidad estructura banderin",
+        palabras: "base interiores base para interiores publicidad base estructura banderin",
         pagina: "base-interiores.html"
     },
 
     {
         nombre: "Base para Exteriores",
-        palabras: "base exteriores base para exteriores publicidad estructura banderin",
+        palabras: "base exteriores base para exteriores publicidad base estructura banderin",
         pagina: "base-exteriores.html"
     },
 
     {
         nombre: "Otros",
-        palabras: "base otros bases publicidad estructura",
+        palabras: "base otros bases publicidad base lanza tornillos estructura",
         pagina: "otros.html"
     },
 
