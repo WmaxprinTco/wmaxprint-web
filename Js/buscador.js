@@ -359,7 +359,7 @@ const productos = [
 
     {
         nombre: "Rompetráficos",
-        palabras: "rompetrafico rompetráficos rompetrafico estructura publicidad",
+        palabras: "rompetrafico rompetráficos rompe trafico estructura publicidad",
         pagina: "rompetrafico.html"
     },
 
@@ -423,19 +423,19 @@ const productos = [
 
     {
         nombre: "Porta Catálogo con Marco",
-        palabras: "porta catalogo catálogo marco revistero publicidad",
+        palabras: "revistero porta catalogo catálogo marco revistero publicidad",
         pagina: "catalogo-marco.html"
     },
 
     {
         nombre: "Porta Catálogo o Revistero Aluminio",
-        palabras: "porta catalogo catálogo revistero aluminio publicidad",
+        palabras: "revistero porta catalogo catálogo revistero aluminio publicidad",
         pagina: "catalogo-aluminio.html"
     },
 
     {
         nombre: "Porta Catálogo o Revistero Hierro",
-        palabras: "porta catalogo catálogo revistero hierro publicidad",
+        palabras: "revistero porta catalogo catálogo revistero hierro publicidad",
         pagina: "catalogo-hierro.html"
     },
 
@@ -638,6 +638,15 @@ const imagenesProductos = {
     "arana-importadadelujo.html": "Img/Imagenproductos/aranalujo.png",
     "arana-exteriorazul.html": "Img/Imagenproductos/aranaexteriorazul.png",
     "arana-exteriorgris.html": "Img/Imagenproductos/aranagrisexterior.png",
+
+    // SERVICIOS
+"papeleria.html": "Img/Empresa/papeleria.jpeg",
+"gran-formato.html": "Img/Empresa/granformato.jpeg",
+"sublimacion.html": "Img/Bannerservicios/sublimacionimp.png",
+"dtf.html": "Img/Servicios/dtf.jpeg",
+"calandra.html": "Img/Servicios/calandra.jpeg",
+"portapendones.html": "Img/Servicios/portapendonesbn.png",
+    
 
     // ROLL UP
     "rollup-easy.html": "Img/Imagenproductos/rollupeasy.png",
