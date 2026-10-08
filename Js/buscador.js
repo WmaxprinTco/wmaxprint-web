@@ -87,49 +87,57 @@ const productos = [
     {
         nombre: "Roll Up Easy",
         palabras: "roll up rollup easy publicidad banner pendon pendones",
-        pagina: "rollup-easy.html"
+        pagina: "rollup-easy.html",
+        imagen: "Img/Imagenproductos/rollupeasy.png"
     },
 
     {
         nombre: "Roll Up Lite",
         palabras: "roll up rollup lite publicidad banner pendon pendones",
-        pagina: "rollup-lite.html"
+        pagina: "rollup-lite.html",
+        imagen: "Img/Imagenproductos/rolluplite.png"
     },
 
     {
         nombre: "Roll Up Estándar",
         palabras: "roll up rollup estandar estándar publicidad banner pendon pendones",
-        pagina: "rollup-estandar.html"
+        pagina: "rollup-estandar.html",
+        imagen: "Img/Imagenproductos/rollupestandar.png"
     },
 
     {
         nombre: "Roll Up de Lujo",
         palabras: "roll up rollup lujo publicidad banner pendon pendones",
-        pagina: "rollup-lujo.html"
+        pagina: "rollup-lujo.html",
+        imagen: "Img/Imagenproductos/rolluplujo.png"
     },
 
     {
         nombre: "Roll Up 150x200",
         palabras: "roll up rollup 150 200 150x200 publicidad banner pendon pendones",
-        pagina: "rollup-150.html"
+        pagina: "rollup-150.html",
+        imagen: "Img/Imagenproductos/rollup150.png"
     },
 
     {
         nombre: "Roll Up Doble Cara",
         palabras: "roll up rollup doble cara dos caras publicidad banner pendon pendones",
-        pagina: "rollup-doblecara.html"
+        pagina: "rollup-doblecara.html",
+        imagen: "Img/Imagenproductos/rollupdoblecara.png"
     },
 
     {
         nombre: "Mini Roll Up",
         palabras: "mini roll up mini rollup publicidad banner pendon pendones",
-        pagina: "mini-rollup.html"
+        pagina: "mini-rollup.html",
+        imagen: "Img/Imagenproductos/minirollup.png"
     },
 
     {
         nombre: "Trípode Una o dos caras",
         palabras: "tripode trípode una dos caras publicidad banner estructura",
-        pagina: "tripode.html"
+        pagina: "tripode.html",
+        imagen: "Img/Imagenproductos/tripodedoscaras.png"
     },
 
 
