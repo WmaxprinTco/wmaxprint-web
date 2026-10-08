@@ -626,6 +626,107 @@ const listaResultados = document.getElementById("lista-resultados");
 const tituloResultados = document.getElementById("titulo-resultados");
 const cantidadResultados = document.getElementById("cantidad-resultados");
 
+// =========================
+// IMÁGENES DE PRODUCTOS
+// =========================
+
+const imagenesProductos = {
+
+    // ARAÑAS
+    "arana-nacional.html": "Img/Imagenproductos/arananacional.png",
+    "arana-importada.html": "Img/Imagenproductos/aranaimportada.png",
+    "arana-importadadelujo.html": "Img/Imagenproductos/aranalujo.png",
+    "arana-exteriorazul.html": "Img/Imagenproductos/aranaexteriorazul.png",
+    "arana-exteriorgris.html": "Img/Imagenproductos/aranagrisexterior.png",
+
+    // ROLL UP
+    "rollup-easy.html": "Img/Imagenproductos/rollupeasy.png",
+    "rollup-lite.html": "Img/Imagenproductos/rolluplite.png",
+    "rollup-estandar.html": "Img/Imagenproductos/rollupestandar.png",
+    "rollup-lujo.html": "Img/Imagenproductos/rolluplujo.png",
+    "rollup-150.html": "Img/Imagenproductos/rollup150.png",
+    "rollup-doblecara.html": "Img/Imagenproductos/rollupdoblecara.png",
+    "mini-rollup.html": "Img/Imagenproductos/minirollup.png",
+    "tripode.html": "Img/Imagenproductos/tripodedoscaras.png",
+
+    // BACKING
+    "backing-tripodes.html": "Img/Imagenproductos/backingtripode.png",
+    "backing-ajustable.html": "Img/Imagenproductos/backingajustable.png",
+    "backing-arana.html": "Img/Imagenproductos/backingarana.png",
+
+    // POP MAN
+    "popman-arana.html": "Img/Imagenproductos/popmanarana.png",
+    "popman-banderin.html": "Img/Imagenproductos/popmanbanderin.png",
+    "popman-cuadrado.html": "Img/Imagenproductos/popmancuadrado.png",
+    "popman-redondo.html": "Img/Imagenproductos/popmanredondo.png",
+
+    // SKYLINE
+    "skyline-velcro.html": "Img/Imagenproductos/skylinevelcro.png",
+    "skyline-paneles.html": "Img/Imagenproductos/skylinecurvo.png",
+    "skyline-counter.html": "Img/Imagenproductos/skylinevelcro.png",
+
+    // STANDS TUBULARES
+    "stand-tubular.html": "Img/Imagenproductos/standtubular.png",
+    "stand-onda.html": "Img/Imagenproductos/standonda.png",
+    "stand-cobra.html": "Img/Imagenproductos/standcobra.png",
+    "stand-curvo.html": "Img/Imagenproductos/standcurvo.png",
+    "stand-recto.html": "Img/Imagenproductos/standrecto.png",
+    "stand-tubularu.html": "Img/Imagenproductos/standu.png",
+
+    // INFLABLES
+    "igloo.html": "Img/Imagenproductos/igloo1.png",
+    "arcos.html": "Img/Imagenproductos/arcos.png",
+    "totem.html": "Img/Imagenproductos/totem.png",
+    "replicas.html": "Img/Imagenproductos/replica.png",
+    "recreacion.html": "Img/Imagenproductos/recreacion.png",
+    "productos.html": "Img/Imagenproductos/productosinflables.png",
+
+    // BANDERINES Y BASES
+    "banderin-gota.html": "Img/Imagenproductos/banderingota.png",
+    "banderin-pluma.html": "Img/Imagenproductos/banderinpluma.png",
+    "banderin-rectangular.html": "Img/Imagenproductos/banderinrectangular.png",
+    "banderas-publicitarias.html": "Img/Imagenproductos/banderaspublci.png",
+    "base-interiores.html": "Img/Imagenproductos/basesparainteriores.png",
+    "base-exteriores.html": "Img/Imagenproductos/basesparaexteriores.png",
+    "otros.html": "Img/Imagenproductos/baserectangular.png",
+
+    // ESTRUCTURAS PUBLICITARIAS
+    "tropezon-carton.html": "Img/Imagenproductos/tropezoncarton.png",
+    "rompetrafico.html": "Img/Imagenproductos/rompetrafico.png",
+    "tropezon-rellenable.html": "Img/Imagenproductos/tropezonrellenable.png",
+    "tropezon-marco.html": "Img/Imagenproductos/tropezonmarco.png",
+    "marco-abatible.html": "Img/Imagenproductos/marcoabatible.png",
+
+    // COUNTERS
+    "counter-plastico.html": "Img/Imagenproductos/counterplastico.png",
+    "counter-metalico.html": "Img/Imagenproductos/countermetalico.png",
+    "counter-ruedas.html": "Img/Imagenproductos/counteruedas.png",
+    "counter-lujo.html": "Img/Imagenproductos/counterlujo.png",
+    "counter-popup.html": "Img/Imagenproductos/counterpopup.png",
+
+    // REVISTEROS
+    "catalogo-marco.html": "Img/Imagenproductos/portacatalogomarco.png",
+    "catalogo-aluminio.html": "Img/Imagenproductos/potacatalogoaluminio.png",
+    "catalogo-hierro.html": "Img/Imagenproductos/portacatalogorevistero.png",
+
+    // CAJAS DE LUZ
+    "cajaluz-escritorio.html": "Img/Imagenproductos/luzescritorio.png",
+    "cajaluz-rt.html": "Img/Imagenproductos/cajaluz.png",
+    "cajaluz-pared.html": "Img/Imagenproductos/luzpared.png",
+    "cajaluz-piso.html": "Img/Imagenproductos/luzpiso.png",
+    "soporte-cajaluz.html": "Img/Imagenproductos/soportetecho.png",
+
+    // IMPRESIÓN DIGITAL
+    "etiquetas-vinilo.html": "Img/Imagenproductos/etiquetasadhesivo.png",
+    "etiquetas-semicorte.html": "Img/Imagenproductos/etiquetasemicorte.png",
+    "iman-carro.html": "Img/Imagenproductos/imancarro.png",
+    "vinilo-floorgraphic.html": "Img/Imagenproductos/floorgraphic.png",
+    "vinilo-plastificado.html": "Img/Imagenproductos/viniloplastificado.png",
+    "vinilo-microperforado.html": "Img/Imagenproductos/microperforado.png",
+    "señalizacion.html": "Img/Imagenproductos/señalizacion.png",
+    "habladores.html": "Img/Imagenproductos/habladores.png"
+};
+
 if (listaResultados && tituloResultados) {
 
     const resultadosGuardados =
@@ -645,6 +746,8 @@ if (listaResultados && tituloResultados) {
     }
 
     resultadosGuardados.forEach(producto => {
+
+        producto.imagen = imagenesProductos[producto.pagina];
 
         const resultado = document.createElement("div");
 
