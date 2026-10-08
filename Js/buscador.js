@@ -164,7 +164,8 @@ const productos = [
     {
         nombre: "Pop Man Araña",
         palabras: "pop man popman arana araña publicidad estructura",
-        pagina: "popman-arana.html"
+        pagina: "popman-arana.html",
+        imagen: "Img/Imagenproductos/popmanarana.png"
     },
 
     {
