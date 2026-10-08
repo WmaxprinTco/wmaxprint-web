@@ -4,34 +4,39 @@ const productos = [
     // ARAÑAS
     // =========================
 
-    {
-        nombre: "Araña Nacional",
-        palabras: "arana araña nacional estructura publicidad pendon pendones",
-        pagina: "arana-nacional.html"
-    },
+   {
+    nombre: "Araña Nacional",
+    palabras: "arana araña nacional estructura publicidad pendon pendones",
+    pagina: "arana-nacional.html",
+    imagen: "Img/Imagenproductos/arananacional.png"
+},
 
-    {
-        nombre: "Araña Importada",
-        palabras: "arana araña importada estructura publicidad pendon pendones",
-        pagina: "arana-importada.html"
-    },
+{
+    nombre: "Araña Importada",
+    palabras: "arana araña importada estructura publicidad pendon pendones",
+    pagina: "arana-importada.html",
+    imagen: "Img/Imagenproductos/aranaimportada.png"
+},
 
-    {
-        nombre: "Araña Importada de Lujo",
-        palabras: "arana araña importada lujo lujosa estructura publicidad pendon pendones",
-        pagina: "arana-importadadelujo.html"
-    },
+{
+    nombre: "Araña Importada de Lujo",
+    palabras: "arana araña importada lujo lujosa estructura publicidad pendon pendones",
+    pagina: "arana-importadadelujo.html",
+    imagen: "Img/Imagenproductos/aranaimportada.png"
+},
 
     {
         nombre: "Araña para exterior base azul",
         palabras: "arana araña exterior base azul estructura publicidad pendon pendones",
-        pagina: "arana-exteriorazul.html"
+        pagina: "arana-exteriorazul.html",
+        imagen: "Img/Imagenproductos/aranaexteriorazul.png"
     },
 
     {
         nombre: "Araña para exterior base gris de lujo",
         palabras: "arana araña exterior base gris lujo estructura publicidad pendon pendones",
-        pagina: "arana-exteriorgris.html"
+        pagina: "arana-exteriorgris.html",
+        imagen: "Img/Imagenproductos/aranagrisexterior.png"
     },
 
     // =========================
