@@ -1,40 +1,212 @@
 const productos = [
 
+    // =========================
+    // ARAÑAS
+    // =========================
+
     {
         nombre: "Araña Nacional",
-        palabras: "arana araña nacional publicidad estructura",
+        palabras: "arana araña nacional estructura publicidad pendon pendones",
         pagina: "arana-nacional.html"
     },
 
     {
+        nombre: "Araña Importada",
+        palabras: "arana araña importada estructura publicidad pendon pendones",
+        pagina: "arana-importada.html"
+    },
+
+    {
+        nombre: "Araña Importada de Lujo",
+        palabras: "arana araña importada lujo lujosa estructura publicidad pendon pendones",
+        pagina: "arana-importadadelujo.html"
+    },
+
+    {
+        nombre: "Araña para exterior base azul",
+        palabras: "arana araña exterior base azul estructura publicidad pendon pendones",
+        pagina: "arana-exteriorazul.html"
+    },
+
+    {
+        nombre: "Araña para exterior base gris de lujo",
+        palabras: "arana araña exterior base gris lujo estructura publicidad pendon pendones",
+        pagina: "arana-exteriorgris.html"
+    },
+
+
+    // =========================
+    // ROLL UP
+    // =========================
+
+    {
         nombre: "Roll Up Easy",
-        palabras: "roll up easy publicidad banner",
+        palabras: "roll up rollup easy publicidad banner pendon pendones",
         pagina: "rollup-easy.html"
     },
 
     {
-        nombre: "Backing Trípode",
-        palabras: "backing tripode backing trípode publicidad",
+        nombre: "Roll Up Lite",
+        palabras: "roll up rollup lite publicidad banner pendon pendones",
+        pagina: "rollup-lite.html"
+    },
+
+    {
+        nombre: "Roll Up Estándar",
+        palabras: "roll up rollup estandar estándar publicidad banner pendon pendones",
+        pagina: "rollup-estandar.html"
+    },
+
+    {
+        nombre: "Roll Up de Lujo",
+        palabras: "roll up rollup lujo publicidad banner pendon pendones",
+        pagina: "rollup-lujo.html"
+    },
+
+    {
+        nombre: "Roll Up 150x200",
+        palabras: "roll up rollup 150 200 150x200 publicidad banner pendon pendones",
+        pagina: "rollup-150.html"
+    },
+
+    {
+        nombre: "Roll Up Doble Cara",
+        palabras: "roll up rollup doble cara dos caras publicidad banner pendon pendones",
+        pagina: "rollup-doblecara.html"
+    },
+
+    {
+        nombre: "Mini Roll Up",
+        palabras: "mini roll up mini rollup publicidad banner pendon pendones",
+        pagina: "mini-rollup.html"
+    },
+
+    {
+        nombre: "Trípode Una o dos caras",
+        palabras: "tripode trípode una dos caras publicidad banner estructura",
+        pagina: "tripode.html"
+    },
+
+
+    // =========================
+    // BACKING
+    // =========================
+
+    {
+        nombre: "Backing Trípodes",
+        palabras: "backing tripodes trípodes una dos caras publicidad estructura",
         pagina: "backing-tripodes.html"
     },
 
     {
+        nombre: "Backing Ajustable",
+        palabras: "backing ajustable publicidad estructura",
+        pagina: "backing-ajustable.html"
+    },
+
+    {
+        nombre: "Backing Araña",
+        palabras: "backing arana araña publicidad estructura",
+        pagina: "backing-arana.html"
+    },
+
+
+    // =========================
+    // POP MAN
+    // =========================
+
+    {
         nombre: "Pop Man Araña",
-        palabras: "pop man araña popman estructura publicidad",
+        palabras: "pop man popman arana araña publicidad estructura",
         pagina: "popman-arana.html"
     },
 
     {
+        nombre: "Pop Man Banderín",
+        palabras: "pop man popman banderin banderín bandera publicidad",
+        pagina: "popman-banderin.html"
+    },
+
+    {
+        nombre: "Pop Man Doble Cara Cuadrado",
+        palabras: "pop man popman doble cara cuadrado dos caras publicidad",
+        pagina: "popman-cuadrado.html"
+    },
+
+    {
+        nombre: "Pop Man Doble Cara Redondo",
+        palabras: "pop man popman doble cara redondo dos caras publicidad",
+        pagina: "popman-redondo.html"
+    },
+
+
+    // =========================
+    // SKYLINE
+    // =========================
+
+    {
         nombre: "Skyline 5 Paneles",
-        palabras: "skyline 5 paneles estructura publicidad",
+        palabras: "skyline 5 paneles publicidad estructura stand",
         pagina: "skyline-paneles.html"
     },
 
     {
+        nombre: "Skyline 6 Paneles + Counter",
+        palabras: "skyline 6 paneles counter publicidad estructura stand",
+        pagina: "skyline-counter.html"
+    },
+
+    {
+        nombre: "Skyline Velcro",
+        palabras: "skyline velcro publicidad estructura stand",
+        pagina: "skyline-velcro.html"
+    },
+
+
+    // =========================
+    // STAND TUBULARES
+    // =========================
+
+    {
+        nombre: "Stand Tubular",
+        palabras: "stand tubular publicidad estructura",
+        pagina: "stand-tubular.html"
+    },
+
+    {
         nombre: "Stand Tubular Onda",
-        palabras: "stand tubular onda stand publicidad",
+        palabras: "stand tubular onda publicidad estructura",
         pagina: "stand-onda.html"
     },
+
+    {
+        nombre: "Stand Tubular Cobra",
+        palabras: "stand tubular cobra publicidad estructura",
+        pagina: "stand-cobra.html"
+    },
+
+    {
+        nombre: "Stand Tubular Curvo",
+        palabras: "stand tubular curvo publicidad estructura",
+        pagina: "stand-curvo.html"
+    },
+
+    {
+        nombre: "Stand Tubular Recto",
+        palabras: "stand tubular recto publicidad estructura",
+        pagina: "stand-recto.html"
+    },
+
+    {
+        nombre: "Stand Tubular en U",
+        palabras: "stand tubular u en u publicidad estructura",
+        pagina: "stand-tubularu.html"
+    },
+
+
+    // =========================
+    // INFLABLES
+    // =========================
 
     {
         nombre: "Igloo",
@@ -43,39 +215,261 @@ const productos = [
     },
 
     {
+        nombre: "Arcos",
+        palabras: "arcos arco inflable inflables publicidad",
+        pagina: "arcos.html"
+    },
+
+    {
+        nombre: "Totem",
+        palabras: "totem tótem inflable inflables publicidad",
+        pagina: "totem.html"
+    },
+
+    {
+        nombre: "Réplicas",
+        palabras: "replicas réplicas inflable inflables publicidad",
+        pagina: "replicas.html"
+    },
+
+    {
+        nombre: "Recreación",
+        palabras: "recreacion recreación inflable inflables publicidad",
+        pagina: "recreacion.html"
+    },
+
+    {
+        nombre: "Productos",
+        palabras: "productos inflable inflables publicidad",
+        pagina: "productos.html"
+    },
+
+
+    // =========================
+    // BANDERINES Y BASES
+    // =========================
+
+    {
         nombre: "Banderín Gota",
-        palabras: "banderin gota banderín publicidad bandera",
+        palabras: "banderin banderín gota bandera publicidad",
         pagina: "banderin-gota.html"
     },
 
     {
+        nombre: "Banderín Pluma",
+        palabras: "banderin banderín pluma bandera publicidad",
+        pagina: "banderin-pluma.html"
+    },
+
+    {
+        nombre: "Banderín Rectangular",
+        palabras: "banderin banderín rectangular bandera publicidad",
+        pagina: "banderin-rectangular.html"
+    },
+
+    {
+        nombre: "Banderas Publicitarias",
+        palabras: "bandera banderas publicitarias banderin banderín publicidad",
+        pagina: "banderas-publicitarias.html"
+    },
+
+    {
         nombre: "Base para Interiores",
-        palabras: "base interiores base para interiores banderin",
+        palabras: "base interiores base para interiores publicidad estructura banderin",
         pagina: "base-interiores.html"
     },
 
     {
+        nombre: "Base para Exteriores",
+        palabras: "base exteriores base para exteriores publicidad estructura banderin",
+        pagina: "base-exteriores.html"
+    },
+
+    {
+        nombre: "Otros",
+        palabras: "base otros bases publicidad estructura",
+        pagina: "otros.html"
+    },
+
+
+    // =========================
+    // ESTRUCTURAS PUBLICITARIAS
+    // =========================
+
+    {
+        nombre: "Tropezón en Cartón",
+        palabras: "tropezon tropezón carton cartón estructura publicidad",
+        pagina: "tropezon-carton.html"
+    },
+
+    {
+        nombre: "Rompetráficos",
+        palabras: "rompetrafico rompetráficos rompetrafico estructura publicidad",
+        pagina: "rompetrafico.html"
+    },
+
+
+    // =========================
+    // COUNTERS PUBLICITARIOS
+    // =========================
+
+    {
         nombre: "Counter Plástico",
-        palabras: "counter plastico plástico counter publicidad",
+        palabras: "counter plastico plástico publicidad mostrador",
         pagina: "counter-plastico.html"
     },
 
     {
+        nombre: "Counter Metálico",
+        palabras: "counter metalico metálico publicidad mostrador",
+        pagina: "counter-metalico.html"
+    },
+
+    {
+        nombre: "Counter Metálico con Ruedas",
+        palabras: "counter metalico metálico ruedas publicidad mostrador",
+        pagina: "counter-ruedas.html"
+    },
+
+    {
+        nombre: "Counter de Lujo",
+        palabras: "counter lujo publicidad mostrador",
+        pagina: "counter-lujo.html"
+    },
+
+    {
+        nombre: "Counter Pop Up",
+        palabras: "counter popup pop up publicidad mostrador",
+        pagina: "counter-popup.html"
+    },
+
+    {
+        nombre: "Tropezón en Base Rellenable",
+        palabras: "tropezon tropezón base rellenable publicidad estructura",
+        pagina: "tropezon-rellenable.html"
+    },
+
+    {
+        nombre: "Tropezón en Marco",
+        palabras: "tropezon tropezón marco publicidad estructura",
+        pagina: "tropezon-marco.html"
+    },
+
+    {
+        nombre: "Marco Abatible",
+        palabras: "marco abatible publicidad estructura",
+        pagina: "marco-abatible.html"
+    },
+
+
+    // =========================
+    // REVISTEROS PUBLICITARIOS
+    // =========================
+
+    {
         nombre: "Porta Catálogo con Marco",
-        palabras: "porta catalogo catálogo revistero marco",
+        palabras: "porta catalogo catálogo marco revistero publicidad",
         pagina: "catalogo-marco.html"
     },
 
     {
+        nombre: "Porta Catálogo o Revistero Aluminio",
+        palabras: "porta catalogo catálogo revistero aluminio publicidad",
+        pagina: "catalogo-aluminio.html"
+    },
+
+    {
+        nombre: "Porta Catálogo o Revistero Hierro",
+        palabras: "porta catalogo catálogo revistero hierro publicidad",
+        pagina: "catalogo-hierro.html"
+    },
+
+
+    // =========================
+    // CAJAS DE LUZ
+    // =========================
+
+    {
         nombre: "Caja de Luz Ultra Delgada para Escritorio",
-        palabras: "caja luz caja de luz escritorio ultra delgada",
+        palabras: "caja luz escritorio ultra delgada publicidad iluminada",
         pagina: "cajaluz-escritorio.html"
     },
 
     {
+        nombre: "Caja de Luz Ultra Delgada RT",
+        palabras: "caja luz ultra delgada rt publicidad iluminada",
+        pagina: "cajaluz-rt.html"
+    },
+
+    {
+        nombre: "Caja de Luz Ultra Delgada para Pared",
+        palabras: "caja luz ultra delgada pared publicidad iluminada",
+        pagina: "cajaluz-pared.html"
+    },
+
+    {
+        nombre: "Caja de Luz Ultra Delgada para Piso",
+        palabras: "caja luz ultra delgada piso publicidad iluminada",
+        pagina: "cajaluz-piso.html"
+    },
+
+    {
+        nombre: "Soporte Techo o Pared para Caja de Luz Ultradelgada",
+        palabras: "soporte techo pared caja luz ultradelgada publicidad iluminada",
+        pagina: "soporte-cajaluz.html"
+    },
+
+
+    // =========================
+    // IMPRESIÓN DIGITAL
+    // =========================
+
+    {
         nombre: "Etiquetas en Vinilo Adhesivo",
-        palabras: "etiquetas vinilo adhesivo sticker stickers",
+        palabras: "etiquetas vinilo adhesivo sticker stickers impresion impresión digital",
         pagina: "etiquetas-vinilo.html"
+    },
+
+    {
+        nombre: "Etiquetas en Vinilo Adhesivo con Semicorte",
+        palabras: "etiquetas vinilo adhesivo semicorte sticker stickers impresion impresión digital",
+        pagina: "etiquetas-semicorte.html"
+    },
+
+    {
+        nombre: "Imán de Carro y Nevera",
+        palabras: "iman imán carro nevera magnetico magnético impresion impresión",
+        pagina: "iman-carro.html"
+    },
+
+    {
+        nombre: "Impresión en Vinilo Floorgraphic",
+        palabras: "vinilo floorgraphic impresion impresión piso suelo publicidad",
+        pagina: "vinilo-floorgraphic.html"
+    },
+
+    {
+        nombre: "Impresión en Vinilo Plastificado Borraseco",
+        palabras: "vinilo plastificado borraseco borraseco impresión impresion",
+        pagina: "vinilo-plastificado.html"
+    },
+
+    {
+        nombre: "Impresión en Vinilo Microperforado",
+        palabras: "vinilo microperforado impresion impresión ventanas publicidad",
+        pagina: "vinilo-microperforado.html"
+    },
+
+    {
+        nombre: "Señalización en Poliestireno",
+        palabras: "señalizacion señalización poliestireno avisos publicidad",
+        pagina: "señalizacion.html"
+    },
+
+    {
+        nombre: "Habladores",
+        palabras: "habladores publicidad impresion impresión punto venta",
+        pagina: "habladores.html"
     }
 
 ];
