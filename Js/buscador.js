@@ -34,6 +34,47 @@ const productos = [
         pagina: "arana-exteriorgris.html"
     },
 
+    // =========================
+// NUESTROS SERVICIOS
+// =========================
+
+{
+    nombre: "Papelería Comercial",
+    palabras: "papeleria papelería comercial tarjetas volantes facturas sobres tarjetas presentacion presentación",
+    pagina: "papeleria.html"
+},
+
+{
+    nombre: "Impresión a Gran Formato",
+    palabras: "gran formato impresion impresión publicidad gigantografia gigantografía pendones avisos",
+    pagina: "gran-formato.html"
+},
+
+{
+    nombre: "Sublimación",
+    palabras: "sublimacion sublimación estampado productos personalizados",
+    pagina: "sublimacion.html"
+},
+
+{
+    nombre: "DTF",
+    palabras: "dtf impresion impresión textil estampado ropa camisetas",
+    pagina: "dtf.html"
+},
+
+{
+    nombre: "Calandra",
+    palabras: "calandra sublimacion sublimación textil impresion impresión",
+    pagina: "calandra.html"
+},
+
+{
+    nombre: "Portapendones",
+    palabras: "portapendones porta pendones pendones estructuras publicidad",
+    pagina: "portapendones.html"
+},
+
+
 
     // =========================
     // ROLL UP
@@ -472,7 +513,7 @@ const productos = [
         pagina: "habladores.html"
     }
 
-];
+]; 
 
 const inputBuscador = document.getElementById("buscador");
 const botonBuscar = document.getElementById("btn-buscar");
