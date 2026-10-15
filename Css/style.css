@@ -4017,3 +4017,32 @@ html, body {
         z-index: 10 !important;
     }
 }
+
+/* MOSTRAR TEXTOS Y BOTONES DEL SLIDER EN CELULAR */
+
+@media (max-width: 768px) {
+    .slider-hero .slide:nth-child(n+2) .slide-contenido {
+        display: flex !important;
+        position: absolute !important;
+        z-index: 2 !important;
+        top: 50% !important;
+        left: 5% !important;
+        right: 5% !important;
+        width: 90% !important;
+        height: auto !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 15px !important;
+        transform: translateY(-50%) !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        box-sizing: border-box !important;
+        color: #ffffff !important;
+    }
+
+    .slider-hero .slide-contenido h1,
+    .slider-hero .slide-contenido p {
+        color: #ffffff !important;
+    }
+}
