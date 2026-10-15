@@ -3782,13 +3782,25 @@ html, body {
 
 /* Capa oscura para mejorar la lectura del texto */
 
+.slider-hero .slide {
+    isolation: isolate;
+}
+
+.slider-hero .slide img {
+    z-index: 0;
+}
+
 .slider-hero .slide-overlay {
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.55);
     z-index: 1;
+    pointer-events: none;
+}
+
+.slider-hero .slide-contenido {
+    position: relative;
+    z-index: 2;
 }
 
 /* Texto y botón encima de la fotografía */
