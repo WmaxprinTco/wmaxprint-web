@@ -1930,62 +1930,60 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 }
 
-/* =====================================================
-   SLIDER PRINCIPAL — CELULAR
-   ===================================================== */
+/* SLIDER PRINCIPAL — CELULAR */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-    .slider-hero{
-        height:500px;
-        min-height:500px;
+    .slider-hero {
+        height: 500px;
+        min-height: 500px;
     }
 
-    .slide-contenido{
-        top:50%;
-        left:8%;
-        right:8%;
-        transform:translateY(-50%);
-        max-width:none;
-        text-align:left;
+    .slider-hero .slide-contenido {
+        padding: 0 8%;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
     }
 
-    .slide-contenido h1{
-        font-size:34px;
-        line-height:1.08;
-        margin-bottom:15px;
+    .slider-hero .slide-contenido h1 {
+        font-size: 34px;
+        line-height: 1.08;
+        margin-bottom: 15px;
     }
 
-    .slide-contenido p{
-        font-size:16px;
-        line-height:1.45;
-        margin-bottom:0;
-        max-width:100%;
+    .slider-hero .slide-contenido p {
+        font-size: 16px;
+        line-height: 1.45;
+        margin-bottom: 0;
+        max-width: 100%;
     }
 
-    /* QUITAR BOTONES DE LOS SLIDES EN CELULAR */
-    .slide-contenido .boton,
-    .slide-contenido .btn-whatsapp{
-        display:none;
+    /* Ocultar botones en celular, como antes */
+
+    .slider-hero .slide-contenido .boton,
+    .slider-hero .slide-contenido .btn-whatsapp {
+        display: none;
     }
 
-    /* QUITAR FLECHAS EN CELULAR */
-    .slider-flecha{
-        display:none;
+    /* Ocultar flechas en celular */
+
+    .slider-hero .slider-flecha {
+        display: none;
     }
 
-    .slider-indicadores{
-        bottom:15px;
-        gap:8px;
+    /* Indicadores */
+
+    .slider-hero .slider-indicadores {
+        bottom: 15px;
+        gap: 8px;
     }
 
-    .indicador{
-        width:9px;
-        height:9px;
+    .slider-hero .indicador {
+        width: 9px;
+        height: 9px;
     }
-
 }
-
 /*----------------QUIENES SOMOS---------------*/
 
 /*BANNER INTERNOS*/
@@ -3841,29 +3839,3 @@ html, body {
     margin-top: 10px;
 }
 
-/* Adaptación a celulares */
-
-@media (max-width: 768px) {
-    .slider-hero {
-        height: 70vh;
-        min-height: 480px;
-    }
-
-    .slider-hero .slide-contenido {
-        padding: 40px 25px;
-    }
-
-    .slider-hero .slide-contenido h1 {
-        font-size: 38px;
-    }
-
-    .slider-hero .slide-contenido p {
-        font-size: 17px;
-        line-height: 1.5;
-    }
-
-    .slider-hero .slide-contenido .btn-whatsapp {
-        font-size: 15px;
-        padding: 13px 24px;
-    }
-}
