@@ -3922,3 +3922,100 @@ html, body {
     margin-top: 10px;
 }
 
+
+/* =====================================================
+   CORRECCIÓN DEFINITIVA DEL SLIDER EN CELULAR
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* Todos los slides tienen el mismo tamaño */
+    .slider-hero {
+        width: 100% !important;
+        height: 400px !important;
+        min-height: 400px !important;
+        max-height: 400px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        background: transparent !important;
+        position: relative !important;
+    }
+
+    /* Eliminar la reducción de altura de los slides 2, 3 y 4 */
+    .slider-hero .slide,
+    .slider-hero .slide:nth-child(n+2) {
+        position: absolute !important;
+        inset: 0 !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 100% !important;
+        max-height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+        background: transparent !important;
+        overflow: hidden !important;
+    }
+
+    /* Mostrar solo el slide activo */
+    .slider-hero .slide {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        transition: opacity 0.5s ease !important;
+    }
+
+    .slider-hero .slide.activo {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        transform: none !important;
+    }
+
+    /* Todas las imágenes llenan el mismo espacio */
+    .slider-hero .slide > img {
+        position: absolute !important;
+        inset: 0 !important;
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+        background: transparent !important;
+        z-index: 0 !important;
+    }
+
+    /* Mantener el filtro oscuro en todas las imágenes */
+    .slider-hero .slide .slide-overlay {
+        display: block !important;
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: rgba(0, 0, 0, 0.45) !important;
+        z-index: 1 !important;
+        pointer-events: none !important;
+    }
+
+    /* Mantener el texto del primer slide */
+    .slider-hero .slide .slide-contenido {
+        z-index: 2 !important;
+    }
+
+    /* Conservar los banners diseñados sin textos HTML encima */
+    .slider-hero .slide:nth-child(n+2) .slide-contenido {
+        display: none !important;
+    }
+
+    /* Indicadores siempre visibles */
+    .slider-hero .slider-indicadores {
+        z-index: 10 !important;
+    }
+}
