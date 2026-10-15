@@ -1936,7 +1936,7 @@ body.menus-movil-abiertos .menus-servicios-movil{
 
 @media (max-width: 768px) {
 
-    .slider-hero {
+    .slider-hero {      
         width: 100%;
         height: 500px;
         min-height: 500px;
