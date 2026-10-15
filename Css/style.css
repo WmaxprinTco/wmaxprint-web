@@ -3752,3 +3752,106 @@ html, body {
     }
 
 }
+
+/*----------SLIDER PRINCIPAL----------*/
+
+.slider-hero {
+    width: 100%;
+    height: 90vh;
+    min-height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-hero .slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-hero .slide img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Capa oscura para mejorar la lectura del texto */
+
+.slider-hero .slide-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* Texto y botón encima de la fotografía */
+
+.slider-hero .slide-contenido {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    box-sizing: border-box;
+}
+
+.slider-hero .slide-contenido h1 {
+    max-width: 800px;
+    margin: 0 0 20px;
+    font-size: 60px;
+    line-height: 1.1;
+    color: white;
+}
+
+.slider-hero .slide-contenido p {
+    max-width: 650px;
+    margin: 0 0 20px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: white;
+}
+
+.slider-hero .slide-contenido .btn-whatsapp {
+    margin-top: 10px;
+}
+
+/* Adaptación a celulares */
+
+@media (max-width: 768px) {
+    .slider-hero {
+        height: 70vh;
+        min-height: 480px;
+    }
+
+    .slider-hero .slide-contenido {
+        padding: 40px 25px;
+    }
+
+    .slider-hero .slide-contenido h1 {
+        font-size: 38px;
+    }
+
+    .slider-hero .slide-contenido p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .slider-hero .slide-contenido .btn-whatsapp {
+        font-size: 15px;
+        padding: 13px 24px;
+    }
+}
