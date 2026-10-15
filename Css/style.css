@@ -3196,35 +3196,33 @@ html, body {
     transform:translateY(-3px);
 }
 
-
 /* =====================================================
-   SLIDES 2, 3, 4 Y 5 — BANNERS DISEÑADOS
+   SLIDES 2, 3 Y 4 — IMÁGENES CON FILTRO OSCURO
    ===================================================== */
 
-/* Quitar completamente el filtro oscuro */
-
-.slide:nth-child(n+2) .slide-overlay{
-    display:none;
+.slide:nth-child(n+2) .slide-overlay {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+    pointer-events: none;
 }
 
-
-/* Quitar botones y textos que estaban encima */
-
-.slide:nth-child(n+2) .slide-contenido{
-    display:none;
+.slide:nth-child(n+2) .slide-contenido {
+    display: none;
 }
 
-
-/* Mostrar los banners respetando su composición */
-
-.slide:nth-child(n+2) > img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    background:#102845;
-    display:block;
+.slide:nth-child(n+2) > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: transparent;
+    display: block;
 }
-
 /* =====================================================
    INDICADORES
    ===================================================== */
